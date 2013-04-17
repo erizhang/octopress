@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build Up Octopress Style Blog Site
+title: Build up cctopress style blog site
 date: 2012-12-20
 comments: true
 categories: pragramming
