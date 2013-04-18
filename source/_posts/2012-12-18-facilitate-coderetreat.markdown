@@ -5,7 +5,7 @@ date: 2012-12-18 10:51
 comments: true
 categories: Technology
 ---
-Heard from Agile community, there would be codretreat global day activity, My colleague Fred called us to fetch this opportunity which would be used to spread out the Agile engineering practice, and decide to facilitate codereteat in Hangzhou city, and as part of coderetreat global day 2012.
+Heard from Agile community, there would be codretreat global day activity, colleague Fred remind us this is a good opportunity to spread out the Agile engineering practice, and we decide to facilitate codereteat in Hangzhou city, as part of coderetreat global day 2012.
 
 ## What's the coderetreat
 
@@ -55,6 +55,6 @@ Of cause, the advertisement inside our company is quite good, there were more th
 The problem is [Game of life](http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life, "Conway's Game of Life"), programming language is no restrict, actually, we encourage people use strange language.
 
 
-As my feeling, the facility is successful, and quite many people ask me when we will facilitate same event and they willing to attend. Also, help people to build the modern programming awareness, and change the mindset of that limitation (restrict) is not impediment, instead it demend you think more, it likes the matchstick to light your thinking, open your mind.
+As my feeling, the event is successful, and quite many people ask me when we will facilitate same event after then. Also, help people to build the modern programming awareness, and change the mindset of that limitation (restriction) is not impediment, instead it demends you think more, it likes the matchstick to light your thinking, open your mind.
 
 More pictures from Hangzhou GDCR 2012, please click [here](http://coderetreat.org/photo/album/show?id=6456126%3AAlbum%3A18835&xg_source=activity, "GDCR2012 Hangzhou").
