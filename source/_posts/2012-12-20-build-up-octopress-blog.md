@@ -6,24 +6,24 @@ comments: true
 categories: pragramming
 footer: true
 ---
-##Why I choose octopress?
+## Why I choose octopress?
 I'm a programmer, and I'm also a lazy guy. One hand, a programmer will encounter quite a lots of questions and problems, such as algorithom making, post reading, open source community contribution, and bug fixing. On the other hand, I'm lazy, a lazy programmer will forget a lots of things, because he is lazy, and too things to memorize, so write them done on the source code will be a good way.
 
-Sometimes I like blogging, just sometimes. In the eariler time, I blog on myspace in Microsoft host msn, and later, they decide to shut down the host, and push me transferring my owned stuff to wordpress.com, that is a huge platform, million people blog on that, varios of functionalities even I just some little. I'm not a proffsional editor, and I'm living in China, the country cannot visit facebook, twitter, youtube, and wordpress. But thank godness, we can visit github.com in China.
+Sometimes I like blogging, just sometimes. In the eariler time, I blog on myspace in Microsoft host website, and later, they decide to shut down the host, and push me transferring my owned stuff to wordpress.com, that is a huge platform, million people blog on that, varios of functionalities even I just use little of them. I'm not a proffsional editor, and I'm living in China, the country where cannot visit facebook, twitter, youtube, and wordpress. But thank godness, we can visit github.com in China.
 
-Always expect there will be a tiny framework, programmer can post blog likes programming. Thanks godness again, octopress can do it...., thank god, thank author, thank all people who guide me know this.
+Always expect there will be a tiny framework, programmer can post blog likes programming. Thanks godness again, octopress can do it...., thank god, thank author, thank all the people who guide me know this.
 
-##My octopress git repository
+## My octopress git repository
 
-I follow the official guide to [setup octopress]("http://octopress.org/docs/setup/" "Setup Octopress"), that I can easily install the octopress on my Linux OS (No money to buy Mac Book Pro). After finish this, I was recommend build up my blogs on github, since there is programmer's farm. And I managment my octopress and draft like below illustrates:
+I follow the official guide to [setup octopress]("http://octopress.org/docs/setup/" "Setup Octopress"), that I can easily install the octopress on my Linux OS. After finish this, I was recommended to build up my blogs on github, since there is programmer's private plots, we can plant anything what we want. And I managment my octopress and draft like below illustrates:
 
 ![Alt text](/images/2012-12-20-build-up-octopress-blog/my.octopress.repository.png "My octopress blogs git repository")
 
 
 Then I follow up the second guideline to [deploy octopress blogs in github]("http://octopress.org/docs/deploying/github/", "deploy on github"). But another problem is comming, during you execute <code>rake setup_github_pages</code>, rake will ask you input your blog repository in <code>git</code> protocal (actually in SSH protocal), that's my office network cannot support, in our office, we can support <code>https</code>. How I can resolve this issue?
 
-##Tips
-Open the <code>Rakefiel</code> which is under octopress folder, and jump to this code snippet:
+## Tips
+Open the <code>Rakefile</code> which is under octopress folder, and jump to this code snippet:
 {% codeblock lang:ruby %}
 
 task :setup_github_pages, :repo do |t, args|
@@ -58,6 +58,6 @@ task :setup_github_pages, :repo do |t, args|
 {% endcodeblock %}
 
 
-After that, <code>rake</code> can support <code>https</code>. Others, I only follow the official guideline, now you can see this post means I have successfully build up my blogs, and post blogs in office.
+After that, <code>rake</code> can support <code>https</code>. Others, I only follow the official guideline, now you can see this post means I have successfully built up my blogs, and post blogs in office.
 
 Post blogs like programming, if you are programmer, just do it. Cheers!

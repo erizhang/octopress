@@ -37,4 +37,4 @@ Another interesting works is have a taste on the translation works, in 2012, fin
 
 ## What improvements are needed
 
-Be fat, shall make a plan to resolve this problem. I shall learn some web technical in this web era, and be more active in open communities, learn more, and also shall seriously consider where I go. Maybe leave this country is a choice, even it’s not easy for a married man, so practice English communication skill is more important than before. I’ll continually post English blog here, translate English post to Chinese, and practice more. New year, hope can breathe fresh air, drink clear warter, and eat nontoxic food.
+A little fat, shall make a plan to resolve this problem. I shall learn some web technical in this web era, and be more active in open communities, learn more, and also shall seriously consider where I go. Maybe leave this country is a choice, even it’s not easy for a married man, so practice English communication skill is more important than before. I’ll continually post English blog here, translate English post to Chinese, and practice more. New year, hope can breathe fresh air, drink clear warter, and eat nontoxic food.
