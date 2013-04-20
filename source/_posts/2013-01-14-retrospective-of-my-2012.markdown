@@ -22,18 +22,18 @@ Later,  in May, June, my team and I held a clean code contest successfully, it g
 Another interesting works is have a taste on the translation works, in 2012, finish the  [*Codermetrics: Analytics for Improving Software Teams*](http://www.amazon.com/Codermetrics-Analytics-Improving-Software-Teams/dp/1449305156" "Codermetrics") to Chinese version translation. And finish personal owned embedded device development
 
 ### Books I have read:
-* [*The Goal: A Process of Ongoing Improvement*]("http://www.amazon.com/The-Goal-Process-Ongoing-Improvement/dp/0884270610" "The Goal")
-* [*Codermetrics: Analytics for Improving Software Teams*](http://www.amazon.com/Codermetrics-Analytics-Improving-Software-Teams/dp/1449305156" "Codermetrics")
-* [*Outliers: The Story of Success*]("http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930" "Outliers")
-* [*Rework*]("http://www.amazon.com/Rework-Jason-Fried/dp/0307463745", "Rework")
-* [*Git Pro*](http://www.amazon.com/Pro-Git-Scott-Chacon/dp/1430218339/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1358146004&amp;sr=1-1&amp;keywords=git+pro" "Git Pro")
-* [*Hackers & Paters: Big Ideas from the Computer Age*]("http://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554" "Hackers and Painters")
-* [*Animal Farm*](http://www.amazon.com/Animal-Farm-George-Orwell/dp/0451526341/ref=sr_1_2?s=books&amp;ie=UTF8&amp;qid=1358146082&amp;sr=1-2&amp;keywords=animal+farm+by+george+orwell" "Animal Farm")
+* [*The Goal: A Process of Ongoing Improvement*](http://www.amazon.com/The-Goal-Process-Ongoing-Improvement/dp/0884270610 "The Goal")
+* [*Codermetrics: Analytics for Improving Software Teams*](http://www.amazon.com/Codermetrics-Analytics-Improving-Software-Teams/dp/1449305156 "Codermetrics")
+* [*Outliers: The Story of Success*](http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930 "Outliers")
+* [*Rework*](http://www.amazon.com/Rework-Jason-Fried/dp/0307463745, "Rework")
+* [*Git Pro*](http://www.amazon.com/Pro-Git-Scott-Chacon/dp/1430218339/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1358146004&amp;sr=1-1&amp;keywords=git+pro "Git Pro")
+* [*Hackers & Paters: Big Ideas from the Computer Age*](http://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554 "Hackers and Painters")
+* [*Animal Farm*](http://www.amazon.com/Animal-Farm-George-Orwell/dp/0451526341/ref=sr_1_2?s=books&amp;ie=UTF8&amp;qid=1358146082&amp;sr=1-2&amp;keywords=animal+farm+by+george+orwell "Animal Farm")
 
 ### Books I’m reading:
-* [*The Black Swan: Second Edition: The Impact of the Highly Improbable: With a new section: "On Robustness and Fragility*](http://www.amazon.com/Black-Swan-Improbable-Robustness-Fragility/dp/081297381X" "The Black Swan")
-* [*Thinking, Fast and Slow*]("http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374275637" "Thinking, Fast and Slow")
-* [*Software Exorcism: A Handbook for Debugging and Optimizing Legacy Code (Expert's Voice)*]("http://www.amazon.com/Software-Exorcism-Handbook-Debugging-Optimizing/dp/B008SMFV9W", "Software Exorcism")
+* [*The Black Swan: Second Edition: The Impact of the Highly Improbable: With a new section: "On Robustness and Fragility*](http://www.amazon.com/Black-Swan-Improbable-Robustness-Fragility/dp/081297381X "The Black Swan")
+* [*Thinking, Fast and Slow*](http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374275637 "Thinking, Fast and Slow")
+* [*Software Exorcism: A Handbook for Debugging and Optimizing Legacy Code (Expert's Voice)*](http://www.amazon.com/Software-Exorcism-Handbook-Debugging-Optimizing/dp/B008SMFV9W, "Software Exorcism")
 
 ## What improvements are needed
 

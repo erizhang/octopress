@@ -15,12 +15,12 @@ Always expect there will be a tiny framework, programmer can post blog likes pro
 
 ## My octopress git repository
 
-I follow the official guide to [setup octopress]("http://octopress.org/docs/setup/" "Setup Octopress"), that I can easily install the octopress on my Linux OS. After finish this, I was recommended to build up my blogs on github, since there is programmer's private plots, we can plant anything what we want. And I managment my octopress and draft like below illustrates:
+I follow the official guide to [setup octopress](http://octopress.org/docs/setup/ "Setup Octopress"), that I can easily install the octopress on my Linux OS. After finish this, I was recommended to build up my blogs on github, since there is programmer's private plots, we can plant anything what we want. And I managment my octopress and draft like below illustrates:
 
 ![Alt text](/images/2012-12-20-build-up-octopress-blog/my.octopress.repository.png "My octopress blogs git repository")
 
 
-Then I follow up the second guideline to [deploy octopress blogs in github]("http://octopress.org/docs/deploying/github/", "deploy on github"). But another problem is comming, during you execute <code>rake setup_github_pages</code>, rake will ask you input your blog repository in <code>git</code> protocal (actually in SSH protocal), that's my office network cannot support, in our office, we can support <code>https</code>. How I can resolve this issue?
+Then I follow up the second guideline to [deploy octopress blogs in github](http://octopress.org/docs/deploying/github/, "deploy on github"). But another problem is comming, during you execute <code>rake setup_github_pages</code>, rake will ask you input your blog repository in <code>git</code> protocal (actually in SSH protocal), that's my office network cannot support, in our office, we can support <code>https</code>. How I can resolve this issue?
 
 ## Tips
 Open the <code>Rakefile</code> which is under octopress folder, and jump to this code snippet:
