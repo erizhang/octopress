@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Coderetreat: programming game of life under 'no if..else..etc. condition' restriction"
+title: "Coderetreat: programming game of life under "no conditional expression" restriction"
 date: 2013-01-20 23:51
 comments: true
 categories: programming
@@ -17,6 +17,8 @@ So how, is there any trick, I can only say don't know, but here I can give a sam
  > 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
  
  So we can understand the next generation state will be based on two factors: this generation state (live or dead) and live neighours amount. We can define a two-dimensional array like below diagram illustrates:
+ 
+ ![Alt text](/images/2013-01-20/rule_map.png "Rule Map")
  
 The first row means if current generation state is dead (0), for corresponding live neighbours amount, the next generation state of this cell shall be what (0 or 1); similar, the second row means if current generation state is live (1), the value of the array is the next generation state (0/1) of this cell for corresponding live neighbours amount. The formula is: _**rule_map[current state][live neighbours amount - 1] = next generation state**_, for example, if current cell's state is dead, and it has 3 live neighbours, the result will be rule_map[0][3-1] = 1. The pseudocode shall be like this:
  {% codeblock lang:c %}
