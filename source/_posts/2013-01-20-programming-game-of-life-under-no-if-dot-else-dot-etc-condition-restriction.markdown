@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Coderetreat: programming game of life under "no conditional expression" restriction"
+title: "Coderetreat: programming game of life under 'no conditional expression' restriction"
 date: 2013-01-20 23:51
 comments: true
 categories: programming
