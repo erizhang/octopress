@@ -20,7 +20,7 @@ I follow the official guide to [setup octopress](http://octopress.org/docs/setup
 ![Alt text](/images/2012-12-20-build-up-octopress-blog/my.octopress.repository.png "My octopress blogs git repository")
 
 
-Then I follow up the second guideline to [deploy octopress blogs in github](http://octopress.org/docs/deploying/github/, "deploy on github"). But another problem is comming, during you execute <code>rake setup_github_pages</code>, rake will ask you input your blog repository in <code>git</code> protocal (actually in SSH protocal), that's my office network cannot support, in our office, we can support <code>https</code>. How I can resolve this issue?
+Then I follow up the second guideline to [deploy octopress blogs in github](http://octopress.org/docs/deploying/github/ "deploy on github"). But another problem is comming, during you execute <code>rake setup_github_pages</code>, rake will ask you input your blog repository in <code>git</code> protocal (actually in SSH protocal), that's my office network cannot support, in our office, we can support <code>https</code>. How I can resolve this issue?
 
 ## Tips
 Open the <code>Rakefile</code> which is under octopress folder, and jump to this code snippet:
