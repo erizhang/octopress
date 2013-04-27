@@ -7,9 +7,9 @@ categories: programming
 author: Eric Zhang
 ---
 
-We produce telecom equipment, the equipments will be deployed as infrastructure of telecommunication, internet etc., so it required product high stability, high security. For these reason, we have to review our code time and time again, test and test again, we worry about there will be a 911 phone call cannot be reachable since our software bug, or financial exchange be stuck since networking problem which is caused by our software bug. We shall understand that we are making the infrastructure of society, government, financial, security, even national defense. 
+We produce telecom equipment, the equipments will be deployed as infrastructure of telecommunication, internet etc., so it required product high stability, high security. We would not like to see there will be a 911 phone call cannot be reachable since our software bug, or financial exchange be stuck since networking problem which is caused by our software bug. 
 
-I recall that one day, Erno Jeges (who is secure coding expert) told us: you have to care your code as care your baby, otherwise you don't know what your baby will be. Even so, we still found lots of problems regard software security: buffer overflow, print formatting, and integer overflow etc. I'm not expert in this area, but I notice that at least we have to take care of our integer variable first since C/C++ languages handle integers in a very dangerous manner since there are:
+I recall that one day, Erno Jeges (who is secure coding expert) told us: you have to care your code as care your baby, otherwise you don't know what your baby will be. So that, we have tocare software security: buffer overflow, print formatting, and integer overflow etc. I'm not expert in this area, but I notice that at least we have to take care of our integer variable first since C/C++ languages handle integers in a very dangerous manner since there are:
 
 * No overflow exception
 * No run-time detection if a negative integer is converted to an unsigned value
@@ -19,7 +19,7 @@ That's why in our source code hides one integer number multiply by one integer n
 
 ![Alt text](/images/2013-04-27/tangseng.jpeg "Longevity Monk")
 
-let's look at this code snippet:
+It's time to start the puzzle game, please spot out the bomb which is hiden inside the code, let's look at this code snippet:
 {% codeblock lang:c %}
 int copy(char *src, int len)
 {
@@ -86,4 +86,4 @@ And now it's time to review you owned source code, is there any same problem? Ha
 
 Be careful! :\
 
-*(Knowledge I learned from [Computer Systems: A programmer's perspective](http://www.amazon.com/Computer-Systems-A-Programmers-Perspective/dp/013034074X "Amazon link"), and emphasize the mindset in secure coding course)*
+*(Knowledge I learned from [Computer Systems: A programmer's perspective](http://www.amazon.com/Computer-Systems-A-Programmers-Perspective/dp/013034074X "Amazon link"), and emphasize the mindset in secure coding course, if you forget the knowledge, hope this post can remind you pick your book up.)*
