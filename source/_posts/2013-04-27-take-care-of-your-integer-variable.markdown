@@ -33,7 +33,7 @@ int copy(char *src, int len)
 	return 0;
 }
 {% endcodeblock %}
-Could you please tell me is there any problem if you stop here and do not plan to go through this post? Of cause, there is a big problem once assign a negative value to parameter <code>len</code>, for example, we assign the <code>len</code> is -1, the program can be executed in <code>memcpy(dest, src, len)</code>, and -1 will be casted to unsigned value <code>0xffffffff</code>, and lead the program Segmentation fault, this problem is called **Signedness bug**.
+Could you please tell me is there any problem if you stop here and do not plan to go through this post? Of cause, there is a big problem once assign a negative value to parameter <code>len</code>, for example, we assign the <code>len</code> is <code>-1</code>, the program can be executed in <code>memcpy(dest, src, len)</code>, and <code>-1</code> will be casted to unsigned value <code>0xffffffff</code>, and lead the program Segmentation fault, this problem is called **Signedness bug**.
 
 Okay, let's see another code snippet here:
 {% codeblock lang:c %}
@@ -77,9 +77,10 @@ int main(int argc, char *argv[])
     return 0;
 }
 {% endcodeblock %}
-If the <code>i</code> is "65535", the <code>s</code> will be 0, and lead segmentation fault during memcpy, we call it **Widthness integer overflow**. So here we would like to highlight the ranges of integer, we believe professional programmer can deal it well.
+If the <code>i</code> is <code>"65535"</code>, the <code>s</code> will be <code>0</code>, and lead segmentation fault during memcpy, we call it **Widthness integer overflow**. So here we would like to highlight the ranges of integer, we believe professional programmer can deal it well.
 
-![Alt text](/images/2013-04-27/integer-ranges.png "integer ranges")
+![Alt text](/images/2013-04-27/integer-ranges.png "integer ranges
+")
 
 And now it's time to review you owned source code, is there any same problem? Have you group the integer calculation invoking in some centralized place rather than spread everywhere of your program? Have you clearly understand using variable is 2byte, 4bytes or 8bytes? signed or unsigned? 
 
