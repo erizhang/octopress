@@ -50,7 +50,7 @@ int append(char *str1, char *str2, unsigned int len1, unsigned int len2)
     return 0;
 }
 {% endcodeblock %}
-How about this one, is there any problem? In case of len1 is huge number, and <code>len1+len2</code> can be overflow to a small number. For example, <code>len1 = 4294967198</code>, and <code>len2 = 100</code>, and then <code>len1 + len2 = 4294967298 (0x100000002)</code>. We call this problem is **Arithmetical overflow**.
+How about this one, is there any problem? In case of <code>len1</code> is huge number, and <code>len1+len2</code> can be overflow to a small number. For example, <code>len1 = 4294967198</code>, and <code>len2 = 100</code>, and then <code>len1 + len2 = 4294967298 (0x100000002)</code>. We call this problem is **Arithmetical overflow**.
 
 one more:
 
@@ -82,7 +82,7 @@ If the <code>i</code> is <code>"65535"</code>, the <code>s</code> will be <code>
 ![Alt text](/images/2013-04-27/integer-ranges.png "integer ranges
 ")
 
-And now it's time to review you owned source code, is there any same problem? Have you group the integer calculation invoking in some centralized place rather than spread everywhere of your program? Have you clearly understand using variable is 2byte, 4bytes or 8bytes? signed or unsigned? 
+And now it's time to review you owned source code, is there any same problem? Have you group the integer calculation invoking in some centralized place rather than spread everywhere of your program? Have you clearly understand using variable is 2bytes, 4bytes or 8bytes? signed or unsigned? 
 
 Be careful! :\
 
