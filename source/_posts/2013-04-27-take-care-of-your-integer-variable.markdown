@@ -15,7 +15,7 @@ I recall that one day, Erno Jeges (who is secure coding expert) told us: you hav
 * No run-time detection if a negative integer is converted to an unsigned value
 * No checks whether a larger integer value is put into a shorter variable
 
-That's why in our source code hides one integer number multiply by one integer number, and leads software fiery crash. Of cause, sometimes, we can rely one static analysis tool such as Klocwork, cppcheck, but not all of problems can be filtered by tool, human shall participate in the process of software creation. As these reason, programmer who is programming in C/C++ language shall be carefully deal with the calculation or convention of integer variable, and it shall be basic knowledge of C/C++ programmer. That's why I act Longevity Monk who from [A Chinese Odyssey](http://en.wikipedia.org/wiki/A_Chinese_Odyssey "A Chinese Odyssey in Wikipedia") here.
+That's why in our source code hides one integer number multiply by one integer number, and leads software fiery crash. Of cause, sometimes, we can rely on static analysis tool such as Klocwork, cppcheck, but not all of problems can be filtered by tool, human shall participate in the process of software creation. As these reason, programmer who is programming in C/C++ language shall be carefully deal with the calculation or convention of integer variable, and it shall be basic knowledge of C/C++ programmer. That's why I act Longevity Monk who from [A Chinese Odyssey](http://en.wikipedia.org/wiki/A_Chinese_Odyssey "A Chinese Odyssey in Wikipedia") here.
 
 ![Alt text](/images/2013-04-27/tangseng.jpeg "Longevity Monk")
 
