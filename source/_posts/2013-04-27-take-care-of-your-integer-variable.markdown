@@ -9,7 +9,7 @@ author: Eric Zhang
 
 We produce telecom equipment, the equipments will be deployed as infrastructure of telecommunication, internet etc., so it required product high stability, high security. We would not like to see there will be a 911 phone call cannot be reachable since our software bug, or financial exchange be stuck since networking problem which is caused by our software bug. 
 
-I recall that one day, Erno Jeges (who is secure coding expert) told us: you have to care your code as care your baby, otherwise you don't know what your baby will be. So that, we have tocare software security: buffer overflow, print formatting, and integer overflow etc. I'm not expert in this area, but I notice that at least we have to take care of our integer variable first since C/C++ languages handle integers in a very dangerous manner since there are:
+I recall that one day, Erno Jeges (who is secure coding expert) told us: you have to care your code as care your baby, otherwise you don't know what your baby will be. So that, we have to care software security carefully: buffer overflow, print formatting, and integer overflow etc. I'm not expert in this area, but I notice that at least we have to take care of our integer variable first since C/C++ languages handle integers in a very dangerous manner since there are:
 
 * No overflow exception
 * No run-time detection if a negative integer is converted to an unsigned value
