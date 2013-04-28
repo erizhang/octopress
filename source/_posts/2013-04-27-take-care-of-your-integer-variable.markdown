@@ -52,32 +52,27 @@ int append(char *str1, char *str2, unsigned int len1, unsigned int len2)
 {% endcodeblock %}
 How about this one, is there any problem? In case of <code>len1</code> is huge number, and <code>len1+len2</code> can be overflow to a small number. For example, <code>len1 = 4294967198</code>, and <code>len2 = 100</code>, and then <code>len1 + len2 = 4294967298 (0x100000002)</code>. We call this problem is **Arithmetical overflow**.
 
-one more:
+one more, this will be easily to spot with previous experience:
 
 {% codeblock lang:c %}
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, char *argv[])
+int copy(char *src, int len)
 {
     unsigned short s;
-    int i;
     char buf[80];
-    if (argc < 3){
-        return -1;
-    }
-    i = atoi(argv[1]);
-    s = i;
+    s = len;
     if (s >= 80) {
         printf("string is too long!\n");
         return -1;
     }
-    memcpy(buf, argv[2], i);
-    buf[i] = '\0';
+    memcpy(buf, src, len);
+    buf[len] = '\0';
     return 0;
 }
 {% endcodeblock %}
-If the <code>i</code> is <code>"65535"</code>, the <code>s</code> will be <code>0</code>, and lead segmentation fault during memcpy, we call it **Widthness integer overflow**. So here we would like to highlight the ranges of integer, we believe professional programmer can deal it well.
+If the <code>len</code> is <code>65535</code>, the <code>s</code> will be <code>0</code>, and lead segmentation fault during <code>memcpy</code>, we call it **Widthness integer overflow**. So here we would like to highlight the ranges of integer, we believe professional programmer can deal it well.
 
 ![Alt text](/images/2013-04-27/integer-ranges.png "integer ranges
 ")
