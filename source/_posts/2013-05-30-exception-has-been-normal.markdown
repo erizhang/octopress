@@ -9,7 +9,7 @@ author: Eric Zhang
 
 My friend Simon talked with me, he would like to buy some instant coffee or ice cream in supermarket, but he found that, all of them including one ingredient is non-dairy creamer(植脂末). This ingredient is used to make the drink more smooth, it's a replacement of milk, but it's bad for human health. Any way, it's better than melamine(三聚氰胺). Nowadays, you are hard to find instant coffee without non-dairy in China.
 
-Another story what I heard there is a government department named as "temporary emergency processing center for cover of sewer well" (窨井盖临时应急处理中心) is hiring a fixed officer. And as government perspective view, this department will be always existed even the name including "temporary", the reason is they have to handle the "temporary" "emergency" issue. But as I know, the cover of sewer well shall be managed by municipal administration.
+Another story what I heard there is a government department named as "temporary emergency processing center for cover of sewer well" (窨井盖临时应急处理中心) is hiring a fixed officer. And as government perspective view, this department will be always existed even the name including "temporary", the reason is they have to alwyas handle the "temporary" & "emergency" issue. But as I know, the cover of sewer well shall be managed by municipal administration.
 
 The third story is restrict the car to solve the traffic jam, i.e. if the last digit of your car license plate number is 1 or 9, your car will be ban on road on Monday, 2 or 8 will be ban on road on Tuesday, and so on.... This is a temporary solution for traffic jam issue, but currently, it's becoming a final solution, it's normal for administration department.
 
