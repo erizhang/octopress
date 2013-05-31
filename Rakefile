@@ -304,12 +304,19 @@ task :setup_github_pages, :repo do |t, args|
     repo_url = args.repo
   else
     puts "Enter the read/write url for your repository"
-    puts "(For example, 'git@github.com:your_username/your_username.github.com)"
+    puts "(For example, 'git@github.com:your_username/your_username.github.com'"
+    puts "           or 'https://github.com/your_username/your_username.github.com')"
     repo_url = get_stdin("Repository url: ")
   end
-  repo_url = "https://github.com/erizhang/erizhang.github.com"
-  user = "erizhang"#repo_url.match(/:([^\/]+)/)[1]
-  branch = "master"#(repo_url.match(/\/[\w-]+\.github\.com/).nil?) ? 'gh-pages' : 'master'
+
+  protocol = (repo_url.match(/(^git)@/).nil?) ? 'https' : 'git'
+  if protocol == 'git'
+    user = repo_url.match(/:([^\/]+)/)[1]
+  else
+    user = repo_url.match(/github\.com\/([^\/]+)/)[1]
+  end
+
+  branch = (repo_url.match(/\/[\w-]+\.github\.com/).nil?) ? 'gh-pages' : 'master'
   project = (branch == 'gh-pages') ? repo_url.match(/\/([^\.]+)/)[1] : ''
 
   puts "TRACE USER: #{user}, BRANCH: #{branch}, PROJECT: #{project}, repo_url: #{repo_url}"
