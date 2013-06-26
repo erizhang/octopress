@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: programming | Actionary]]></title>
+  <link href="http://erizhang.github.io/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://erizhang.github.io/"/>
+  <updated>2013-06-26T13:29:47+08:00</updated>
+  <id>http://erizhang.github.io/</id>
+  <author>
+    <name><![CDATA[Eric Zhang]]></name>
+    <email><![CDATA[zhang.lyuan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Take care of your integer variables]]></title>
+    <link href="http://erizhang.github.io/blog/2013/04/27/take-care-of-your-integer-variable/"/>
+    <updated>2013-04-27T13:19:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/04/27/take-care-of-your-integer-variable</id>
+    <content type="html"><![CDATA[<p>We produce telecom equipment, the equipments will be deployed as infrastructure of telecommunication, internet etc., so it required product high stability, high security. We would not like to see there will be a 911 phone call cannot be reachable since our software bug, or financial exchange be stuck since networking problem which is caused by our software bug.</p>
+
+<p>I recall that one day, Erno Jeges (who is secure coding expert) told us: you have to care your code as care your baby, otherwise you don't know what your baby will be. So that, we have to deal software security carefully: buffer overflow, print formatting, and integer overflow etc. I'm not expert in this area, but I notice that at least we have to take care of our integer variable first since C/C++ languages handle integers in a very dangerous manner since there are:</p>
+
+<ul>
+<li>No overflow exception</li>
+<li>No run-time detection if a negative integer is converted to an unsigned value</li>
+<li>No checks whether a larger integer value is put into a shorter variable</li>
+</ul>
+
+
+<p>That's why in our source code hides one integer number multiply by one integer number, and leads software fiery crash. Of cause, sometimes, we can rely on static analysis tool such as Klocwork, cppcheck, but not all of problems can be filtered by tool, human shall participate in the process of software creation. As these reason, programmer who is programming in C/C++ language shall be carefully deal with the calculation or convention of integer variable, and it shall be basic knowledge of C/C++ programmer. That's why I act Longevity Monk who from <a href="http://en.wikipedia.org/wiki/A_Chinese_Odyssey" title="A Chinese Odyssey in Wikipedia">A Chinese Odyssey</a> here.</p>
+
+<p><img src="/images/2013-04-27/tangseng.jpeg" title="Longevity Monk" alt="Alt text" /></p>
+
+<p>It's time to start the puzzle game, please spot out the bomb which is hiden inside the code, let's look at this code snippet:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="kt">int</span> <span class="nf">copy</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">src</span><span class="p">,</span> <span class="kt">int</span> <span class="n">len</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="kt">char</span> <span class="n">dest</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">len</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="n">memcpy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+</span><span class='line'><span class="c1">//TODO: use dest here</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+Could you please tell me is there any problem if you stop here and do not plan to go through this post? Of cause, there is a big problem once assign a negative value to parameter <code>len</code>, for example, we assign the <code>len</code> is <code>-1</code>, the program can be executed in <code>memcpy(dest, src, len)</code>, and <code>-1</code> will be casted to unsigned value <code>0xffffffff</code>, and lead the program Segmentation fault, this problem is called <strong>Signedness bug</strong>.</p>
+
+<p>Okay, let's see another code snippet here:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="kt">int</span> <span class="nf">append</span><span class="p">(</span><span class="kt">char</span> <span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="n">str1</span><span class="p">,</span> <span class="kt">char</span> <span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="n">str2</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">len1</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">len2</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="kt">char</span> <span class="n">dest_buf</span><span class="p">[</span><span class="mi">64</span><span class="p">];</span>
+</span><span class='line'><span class="k">if</span> <span class="p">((</span><span class="n">len1</span> <span class="o">+</span> <span class="n">len2</span><span class="p">)</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="mi">64</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="n">memcpy</span><span class="p">(</span><span class="n">dest_buf</span><span class="p">,</span> <span class="n">str1</span><span class="p">,</span> <span class="n">len1</span><span class="p">);</span>
+</span><span class='line'><span class="n">memcpy</span><span class="p">(</span><span class="n">dest_buf</span> <span class="o">+</span> <span class="n">len1</span><span class="p">,</span> <span class="n">str2</span><span class="p">,</span> <span class="n">len2</span><span class="p">);</span>
+</span><span class='line'><span class="c1">//TODO: dest_buf usage can be added here</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+How about this one, is there any problem? In case of <code>len1</code> is huge number, and <code>len1+len2</code> can be overflow to a small number. For example, <code>len1 = 4294967198</code>, and <code>len2 = 100</code>, and then <code>len1 + len2 = 4294967298 (0x100000002)</code>. We call this problem is <strong>Arithmetical overflow</strong>.</p>
+
+<p>one more, this will be easily to spot with previous experience:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">include</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">stdio</span><span class="p">.</span><span class="n">h</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">include</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">string</span><span class="p">.</span><span class="n">h</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="kt">int</span> <span class="n">copy</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">src</span><span class="p">,</span> <span class="kt">int</span> <span class="n">len</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">s</span><span class="p">;</span>
+</span><span class='line'><span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">80</span><span class="p">];</span>
+</span><span class='line'><span class="n">s</span> <span class="o">=</span> <span class="n">len</span><span class="p">;</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">s</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span> <span class="mi">80</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;string is too long!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="n">memcpy</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+</span><span class='line'><span class="n">buf</span><span class="p">[</span><span class="n">len</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+If the <code>len</code> is <code>65535</code>, the <code>s</code> will be <code>0</code>, and lead segmentation fault during <code>memcpy</code>, we call it <strong>Widthness integer overflow</strong>. So here we would like to highlight the ranges of integer, we believe professional programmer can deal it well.</p>
+
+<p><img src="/images/2013-04-27/integer-ranges.png" title="integer ranges
+" alt="Alt text" /></p>
+
+<p>And now it's time to review you owned source code, is there any same problem? Have you group the integer calculation invoking in some centralized place rather than spread everywhere of your program? Have you clearly understand using variable is 2bytes, 4bytes or 8bytes? signed or unsigned?</p>
+
+<p>Be careful! :\</p>
+
+<p><em>(Knowledge I learned from <a href="http://www.amazon.com/Computer-Systems-A-Programmers-Perspective/dp/013034074X" title="Amazon link">Computer Systems: A programmer's perspective</a>, and emphasize the mindset in secure coding course, if you forget the knowledge, hope this post can remind you pick your book up.)</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Coderetreat: programming game of life under 'no conditional expression' restriction]]></title>
+    <link href="http://erizhang.github.io/blog/2013/04/12/programming-game-of-life-under-no-if-dot-else-dot-etc-condition-restriction/"/>
+    <updated>2013-04-12T23:51:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/04/12/programming-game-of-life-under-no-if-dot-else-dot-etc-condition-restriction</id>
+    <content type="html"><![CDATA[<p>If you search this topic with "coderetreat", "no if" or "no conditional expression" keywords, and if you are in coderetreat event right now, I suggest you close this topic, and after you finish the session, than open it again, and compare with your implementation, or comments your better implementation here.</p>
+
+<p>I have facilitated several coderetreat events, not master it, but experienced. When in the session with rule <strong><em>No conditional expression allowed</em></strong>, most of people will blame me why we have such restriction, or tell me WTF it's impossiable if we programming in C language. Minutes later, someone would ask me, shall we use "while loop" or "for loop"instead of "if", but I always say no. And later, someone told me that programming in OO polymorphism can be done, but how in C?</p>
+
+<p>So how, is there any trick, I can only say don't know, but here I can give a sample of how to resolve the major logic of <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" title="Game of Life">"Conway's Game of Life"</a>, rules of the game is:</p>
+
+<blockquote><ol>
+<li>Any live cell with fewer than two live neighbours dies, as if caused by under-population.</li>
+<li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+<li>Any live cell with more than three live neighbours dies, as if by overcrowding.</li>
+<li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+</ol>
+</blockquote>
+
+<p> So we can understand the next generation state will be based on two factors: current generation state (live or dead) and live neighours amount. We can define a two-dimensional array like below diagram illustrates:</p>
+
+<p> <img src="/images/2013-04-12/rule_map.png" title="Rule Map" alt="Alt text" /></p>
+
+<p>The first row means current generation state is dead (0), for corresponding live neighbours amount, the next generation state of this cell shall be what (The value of array defined); similar, the second row means current generation state is live (1), for correspding live neighbours amount, the next generation state is defined as the value of array. The formula is: <em><strong>rule_map[current state][live neighbours amount - 1] = next generation state</strong></em>, for example, if current cell's state is dead, and it has 3 live neighbours, the result will be rule_map[0][3-1] = 1. The pseudocode shall be like this:
+ <div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'> <span class="o">/&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="mi">0</span> <span class="n">means</span> <span class="n">dead</span><span class="p">,</span> <span class="mi">1</span> <span class="n">means</span> <span class="n">live</span><span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;/</span>
+</span><span class='line'> <span class="kt">int</span> <span class="n">rule_map</span><span class="p">[][]</span> <span class="o">=</span> <span class="p">{</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">},</span>
+</span><span class='line'> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">},</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span> <span class="p">};</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span> <span class="kt">int</span> <span class="n">next_state</span><span class="p">(</span><span class="kt">int</span> <span class="n">cur_state</span><span class="p">,</span> <span class="kt">int</span> <span class="n">neighbours</span><span class="p">)</span>
+</span><span class='line'> <span class="p">{</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span> <span class="k">return</span> <span class="n">rule_map</span><span class="p">[</span><span class="n">cur_state</span><span class="p">][</span><span class="n">neighbours</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span> <span class="p">}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>So how to calculate the live neighbours amount of specific cell? Please you make a post for it. I'm not going to clarify everything here, or you can comment below. Have fun. :\</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[structure assignment and its pitfall in C language]]></title>
+    <link href="http://erizhang.github.io/blog/2013/01/28/structure-assignment-and-its-pitfall-in-C-language/"/>
+    <updated>2013-01-28T21:47:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/01/28/structure-assignment-and-its-pitfall-in-C-language</id>
+    <content type="html"><![CDATA[<h2>Problem</h2>
+
+<p>There is a structure type defined as below:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="k">typedef</span> <span class="k">struct</span> <span class="n">__map_t</span> <span class="p">{</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="kt">int</span> <span class="n">code</span><span class="p">;</span>
+</span><span class='line'><span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="n">NAME_SIZE</span><span class="p">];</span>
+</span><span class='line'><span class="kt">char</span> <span class="o">*</span><span class="n">alias</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">}</span><span class="n">map_t</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+If we want to assign <code>map_t</code> type variable <code>struct2</code> to <code>sturct1</code>, we usually have below 3 ways:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="o">/&lt;</span><span class="n">em</span><span class="o">&gt;</span> <span class="n">Way</span> <span class="err">#</span><span class="mi">1</span><span class="o">:</span> <span class="n">assign</span> <span class="n">the</span> <span class="n">members</span> <span class="n">one</span> <span class="n">by</span> <span class="n">one</span> <span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;/</span>
+</span><span class='line'><span class="n">struct1</span><span class="p">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">struct2</span><span class="p">.</span><span class="n">code</span><span class="p">;</span>
+</span><span class='line'><span class="n">strncpy</span><span class="p">(</span><span class="n">struct1</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">struct2</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">NAME_SIZE</span><span class="p">);</span>
+</span><span class='line'><span class="n">struct1</span><span class="p">.</span><span class="n">alias</span> <span class="o">=</span> <span class="n">struct2</span><span class="p">.</span><span class="n">alias</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;/&lt;</span><span class="n">em</span><span class="o">&gt;</span> <span class="n">Way</span> <span class="err">#</span><span class="mi">2</span><span class="o">:</span> <span class="n">memcpy</span> <span class="n">the</span> <span class="n">whole</span> <span class="n">memory</span> <span class="n">content</span> <span class="n">of</span> <span class="n">struct2</span> <span class="n">to</span> <span class="n">struct1</span> <span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;/</span>
+</span><span class='line'><span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">struct1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">struct2</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">struct1</span><span class="p">));</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;/&lt;</span><span class="n">em</span><span class="o">&gt;</span> <span class="n">Way</span> <span class="err">#</span><span class="mi">3</span><span class="o">:</span> <span class="n">straight</span> <span class="n">assignment</span> <span class="n">with</span> <span class="sc">&#39;=&#39;</span> <span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;/</span>
+</span><span class='line'><span class="n">struct1</span> <span class="o">=</span> <span class="n">struct2</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+Consider above ways, most of programmer won't use way #1, since it's so stupid ways compare to other twos, only if we are defining an structure assignment function. So, <strong><em>what's the difference between way #2 and way #3? And what's the pitfall of the structure assignment once there is array or pointer member existed?</em></strong> Coming sections maybe helpful for your understanding.</p>
+
+<h2>The difference between <strong><em>'=' straight assignment</em></strong> and <strong><em>memcpy</em></strong></h2>
+
+<p>The <code>struct1=struct2;</code> notation is not only <strong>more concise</strong>, but also <strong>shorter</strong> and <strong>leaves more optimization opportunities to the compiler</strong>. The semantic meaning of = is an assignment, while <code>memcpy</code> just copies memory. That's a huge <strong>difference in readability</strong> as well, although <code>memcpy</code> does the same in this case.</p>
+
+<p>Copying by straight assignment is probably best, since it's shorter, easier to read, and has a higher level of abstraction. Instead of saying (to the human reader of the code) "copy these bits from here to there", and requiring the reader to think about the size argument to the copy, you're just doing a straight assignment ("copy this value from here to here"). There can be no hesitation about whether or not the size is correct.</p>
+
+<p>Consider that, above source code also has pitfall about the pointer alias, it will lead dangling pointer problem (<em>It will be introduced below section</em>). If we use straight structure assignment '=' in C++, we <strong>can consider to overload the <code>operator=</code> function</strong>, that can dissolve the problem, and the structure assignment usage does not need to do any changes, but structure memcpy does not have such opportunity.</p>
+
+<h2>The pitfall of structure assignment:</h2>
+
+<p>Beware though, that copying structs that contain pointers to heap-allocated memory can be a bit dangerous, since by doing so you're aliasing the pointer, and typically making it ambiguous who owns the pointer after the copying operation.</p>
+
+<p>If the structures are of compatible types, yes, you can, with something like:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="n">memcpy</span> <span class="p">(</span><span class="n">dest_struct</span><span class="p">,</span> <span class="n">source_struct</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">dest_struct</span><span class="p">));</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>}
+The only thing you need to be aware of is that this is a shallow copy. In other words, if you have a <code>char *</code> pointing to a specific string, both structures will point to the same string.</p>
+
+<p>And changing the contents of one of those string fields (the data that the <code>char <em></code> points to, not the <code>char </em></code> itself) will change the other as well. For these situations a "deep copy" is really the only choice, and that needs to go in a function. If you want a easy copy without having to manually do each field but with the added bonus of non-shallow string copies, use strdup:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="n">memcpy</span> <span class="p">(</span><span class="n">dest_struct</span><span class="p">,</span> <span class="n">source_struct</span><span class="p">,</span> <span class="k">sizeof</span> <span class="p">(</span><span class="n">dest_struct</span><span class="p">));</span>
+</span><span class='line'><span class="n">dest_struct</span><span class="o">-&gt;</span><span class="n">strptr</span> <span class="o">=</span> <span class="n">strdup</span><span class="p">(</span><span class="n">source_struct</span><span class="o">-&gt;</span><span class="n">strptr</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This will copy the entire contents of the structure, then deep-copy the string, effectively giving a separate string to each structure. And, if your C implementation doesn't have a strdup (it's not part of the ISO standard), you have to allocate new memory for <code>dest_struct</code> pointer member, and copy the data to memory address.</p>
+
+<h3>Example of trap:</h3>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">include</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">stdio</span><span class="p">.</span><span class="n">h</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">include</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">stdlib</span><span class="p">.</span><span class="n">h</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">include</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">string</span><span class="p">.</span><span class="n">h</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">define</span> <span class="n">NAME_SIZE</span>   <span class="mi">16</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="k">typedef</span> <span class="k">struct</span> <span class="n">_map_t</span> <span class="p">{</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="kt">int</span> <span class="n">code</span><span class="p">;</span>
+</span><span class='line'><span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="n">NAME_SIZE</span><span class="p">];</span>
+</span><span class='line'><span class="kt">char</span> <span class="o">*</span><span class="n">alias</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">}</span> <span class="n">map_t</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">map_t</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">/* initialize the a&#39;s members value */</span>
+</span><span class='line'><span class="n">a</span><span class="p">.</span><span class="n">code</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">;</span>
+</span><span class='line'><span class="n">snprintf</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">NAME_SIZE</span><span class="p">,</span> <span class="s">&quot;Controller SW3&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="kt">char</span> <span class="o">*</span><span class="n">alias</span> <span class="o">=</span> <span class="s">&quot;RNC&amp;amp;IPA&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">a</span><span class="p">.</span><span class="n">alias</span> <span class="o">=</span> <span class="n">alias</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">/* assign the value via memcpy */</span>
+</span><span class='line'><span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">b</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">a</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">b</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">/* assign the value via &#39;=&#39; */</span>
+</span><span class='line'><span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+</span><span class='line'><span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Below diagram illustrates above source memory layout, if there is a pointer field member, either the straight assignment or <code>memcpy</code>, that will be alias of pointer to point same address. For example, <code>b.alias</code> and <code>c.alias</code> both points to address of <code>a.alias</code>. Once one of them free the pointed address, it will cause another pointer as dangling pointer. <strong>It's dangerous!!</strong></p>
+
+<p><img src="/images/2013-01-28-structure-assignment-and-its-pitfall-in-C-language/structure_assignment.1-1.png" title="Illustrates above source code memory layout." alt="Alt text" /></p>
+
+<h2>Conclusion</h2>
+
+<ul>
+<li>Recommend use straight assignment '=' instead of memcpy.</li>
+<li>If structure has pointer or array member, please consider the pointer alias problem, it will lead dangling pointer once incorrect use. Better way is implement structure assignment function in C, and overload the operator= function in C++.</li>
+</ul>
+
+
+<h2>Reference:</h2>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/5383318/struct-assignment-or-memcpy" title="struct assignment">stackoverflow.com: structure assignment or memcpy</a></li>
+<li><a href="http://stackoverflow.com/questions/2302351/assign-one-struct-to-another-in-c" title="assign one struct to another">stackoverflow.com: assign one struct to another in C</a></li>
+<li><a href="http://bytes.com/topic/c/answers/215832-structures-assignment" title="structures assignment">bytes.com: structures assignment</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Struct_%28C_programming_language%29" title="struct in C programming language">wikipedia: struct in C programming language</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

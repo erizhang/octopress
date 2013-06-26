@@ -1,156 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Actionary</title>
-  <meta name="author" content="Eric Zhang">
-
-  
-  <meta name="description" content="I plan to write this stroy in Chinese, since I suppose it&#8217;s popular in English version, I don&#8217;t know is it same popular in Chinese &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><![CDATA[Actionary]]></title>
+  <link href="http://erizhang.github.io/atom.xml" rel="self"/>
+  <link href="http://erizhang.github.io/"/>
+  <updated>2013-06-26T13:29:47+08:00</updated>
+  <id>http://erizhang.github.io/</id>
+  <author>
+    <name><![CDATA[Eric Zhang]]></name>
+    <email><![CDATA[zhang.lyuan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <link rel="canonical" href="http://erizhang.github.io">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Actionary" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-40225877-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Actionary</a></h1>
-  
-    <h2>A man is valued by his works, not his words!</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:erizhang.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/25/bee-watcher/">Bee Watcher</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-25T17:31:00+08:00" pubdate data-updated="true">Jun 25<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><em>I plan to write this stroy in Chinese, since I suppose it&#8217;s popular in English version, I don&#8217;t know is it same popular in Chinese version</em></p>
+  <entry>
+    <title type="html"><![CDATA[Bee Watcher]]></title>
+    <link href="http://erizhang.github.io/blog/2013/06/25/bee-watcher/"/>
+    <updated>2013-06-25T17:31:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/06/25/bee-watcher</id>
+    <content type="html"><![CDATA[<p><em>I plan to write this stroy in Chinese, since I suppose it&#8217;s popular in English version, I don&#8217;t know is it same popular in Chinese version</em></p>
 
 <p>之前与Terry一起聊天，聊到一个叫做<a href="http://www.drseussart.com/details/illustration/beewatcher.html" title="The Bee Watcher">Bee Watcher</a>的故事，觉得挺有意思的。话说，一位农场主为了提高蜂蜜的产量，他在资深顾问的建议下，请了一位<strong>看蜂人</strong>(Bee Watcher)，<strong>看蜂人</strong>的任务就是监督蜜蜂采蜜，以此来提高产量。可是实际情况是，蜜蜂并没有因为有了<strong>看蜂人</strong>的存在而改变采蜜的方法，它们还是按部就班的从一朵花飞到另一朵花，飞来飞去忙个不停。一年下来，产量没有提高，农场主认为产量没有提高的原因，是因为<strong>看蜂人</strong>看得不够努力，于是雇了一位<strong>看看蜂人</strong>(Bee Watcher Watcher)来监督<strong>看蜂人</strong>的工作，可是，有了<strong>看看蜂人</strong>，<strong>看蜂人</strong>还是像过去一样努力地盯着蜜蜂们忙来忙去，并没有因为有了<strong>看看蜂人</strong>，<strong>看蜂人</strong>就眼晴睁得更大点。一年又过去了，蜂蜜的产量还是没有提高，分析原因，农场主得出了结论是因为<strong>看看蜂人</strong>监督<strong>看蜂人</strong>监督蜜蜂采蜜不够努力，于是他又雇了名<strong>看看看蜂人</strong>(Bee Watcher Watcher Watcher)来监督<strong>看看蜂人</strong>监督<strong>看蜂人</strong>监督蜜蜂采蜜的工作。一年又一年，越来越多的<strong>看看看&#8230;看峰人</strong>(Bee Watcher Watcher &#8230;.. Watcher)，产量还是没有提高，而生产成本却一年比一年高。</p>
 
-<p><img src="/images/2013-06-25/beewatcher_lg.gif" title="The Bee Watcher" alt="Alt text" /></p>
+<p><img src="http://erizhang.github.io/images/2013-06-25/beewatcher_lg.gif" title="The Bee Watcher" alt="Alt text" /></p>
 
 <p><em>picture from <a href="http://www.drseussart.com/details/illustration/beewatcher.html" title="The Bee Watcher">The Bee Watcher - The Art of Dr. Seuss</a></em></p>
 
 <p>我很喜欢这个故事，不是因为绕口令一样的角色名字，而是让我发现了身边藏着的Bee Watcher。我们制定了一个Process，期望它能极大地改善我们的研发状况，可是发现不尽如人意，原因可能是Process执行得不到位，于是，我们制定了更多的Process来确保我们的Process能更好地得到执行。这难道不是一个Bee Watcher。你发现了吗？请将更多的Bee Watcher以Comments形式告诉我吧，对我而言，这一定会是一个不错的收获。:\</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/05/30/exception-has-been-normal/">Exception Has Been Normal</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-30T18:31:00+08:00" pubdate data-updated="true">May 30<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>My friend Simon talked with me, he would like to buy some instant coffee or ice cream in supermarket, but he found that, all of them including one ingredient is non-dairy creamer(植脂末). This ingredient is used to make the drink more smooth, it&#8217;s a replacement of milk, but it&#8217;s bad for human health. Any way, it&#8217;s better than melamine(三聚氰胺). Nowadays, you are hard to find instant coffee without non-dairy in China.</p>
+  <entry>
+    <title type="html"><![CDATA[Exception has been normal]]></title>
+    <link href="http://erizhang.github.io/blog/2013/05/30/exception-has-been-normal/"/>
+    <updated>2013-05-30T18:31:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/05/30/exception-has-been-normal</id>
+    <content type="html"><![CDATA[<p>My friend Simon talked with me, he would like to buy some instant coffee or ice cream in supermarket, but he found that, all of them including one ingredient is non-dairy creamer(植脂末). This ingredient is used to make the drink more smooth, it&#8217;s a replacement of milk, but it&#8217;s bad for human health. Any way, it&#8217;s better than melamine(三聚氰胺). Nowadays, you are hard to find instant coffee without non-dairy in China.</p>
 
 <p>Another story what I heard there is a government department named as &#8220;temporary emergency processing center for cover of sewer well&#8221; (窨井盖临时应急处理中心) is hiring a fixed officer. And as government perspective view, this department will be always existed even the name including &#8220;temporary&#8221;, the reason is they have to alwyas handle the &#8220;temporary&#8221; &amp; &#8220;emergency&#8221; issue. But as I know, the cover of sewer well shall be managed by municipal administration.</p>
 
@@ -161,42 +46,15 @@
 <p>But why? I often ask this question to myself and my colleague. It might be caused by lazy, yes, that&#8217;s one reason. But another problem in government administration area, the temporary solution can solve some problems of employment, and there will be more position for officer ask, even it&#8217;s not needed. In software programming area as well, more workaround, more maintenance is needed, and more engineers are needed. But all of us forget one thing is find out the root cause, and fix it.</p>
 
 <p>If exception has been normal, around of you use workaround solve another problem of workaround, it means the situation around of you has been worse, you need to consider quit only if you can solve it. :\</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/27/take-care-of-your-integer-variable/">Take Care of Your Integer Variables</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-27T13:19:00+08:00" pubdate data-updated="true">Apr 27<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>We produce telecom equipment, the equipments will be deployed as infrastructure of telecommunication, internet etc., so it required product high stability, high security. We would not like to see there will be a 911 phone call cannot be reachable since our software bug, or financial exchange be stuck since networking problem which is caused by our software bug.</p>
+  <entry>
+    <title type="html"><![CDATA[Take care of your integer variables]]></title>
+    <link href="http://erizhang.github.io/blog/2013/04/27/take-care-of-your-integer-variable/"/>
+    <updated>2013-04-27T13:19:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/04/27/take-care-of-your-integer-variable</id>
+    <content type="html"><![CDATA[<p>We produce telecom equipment, the equipments will be deployed as infrastructure of telecommunication, internet etc., so it required product high stability, high security. We would not like to see there will be a 911 phone call cannot be reachable since our software bug, or financial exchange be stuck since networking problem which is caused by our software bug.</p>
 
 <p>I recall that one day, Erno Jeges (who is secure coding expert) told us: you have to care your code as care your baby, otherwise you don&#8217;t know what your baby will be. So that, we have to deal software security carefully: buffer overflow, print formatting, and integer overflow etc. I&#8217;m not expert in this area, but I notice that at least we have to take care of our integer variable first since C/C++ languages handle integers in a very dangerous manner since there are:</p>
 
@@ -209,7 +67,7 @@
 
 <p>That&#8217;s why in our source code hides one integer number multiply by one integer number, and leads software fiery crash. Of cause, sometimes, we can rely on static analysis tool such as Klocwork, cppcheck, but not all of problems can be filtered by tool, human shall participate in the process of software creation. As these reason, programmer who is programming in C/C++ language shall be carefully deal with the calculation or convention of integer variable, and it shall be basic knowledge of C/C++ programmer. That&#8217;s why I act Longevity Monk who from <a href="http://en.wikipedia.org/wiki/A_Chinese_Odyssey" title="A Chinese Odyssey in Wikipedia">A Chinese Odyssey</a> here.</p>
 
-<p><img src="/images/2013-04-27/tangseng.jpeg" title="Longevity Monk" alt="Alt text" /></p>
+<p><img src="http://erizhang.github.io/images/2013-04-27/tangseng.jpeg" title="Longevity Monk" alt="Alt text" /></p>
 
 <p>It&#8217;s time to start the puzzle game, please spot out the bomb which is hiden inside the code, let&#8217;s look at this code snippet:</p>
 
@@ -310,7 +168,7 @@
 
 <p>If the <code>len</code> is <code>65535</code>, the <code>s</code> will be <code>0</code>, and lead segmentation fault during <code>memcpy</code>, we call it <strong>Widthness integer overflow</strong>. So here we would like to highlight the ranges of integer, we believe professional programmer can deal it well.</p>
 
-<p><img src="/images/2013-04-27/integer-ranges.png" title="integer ranges
+<p><img src="http://erizhang.github.io/images/2013-04-27/integer-ranges.png" title="integer ranges
 " alt="Alt text" /></p>
 
 <p>And now it&#8217;s time to review you owned source code, is there any same problem? Have you group the integer calculation invoking in some centralized place rather than spread everywhere of your program? Have you clearly understand using variable is 2bytes, 4bytes or 8bytes? signed or unsigned?</p>
@@ -318,42 +176,15 @@
 <p>Be careful! :\</p>
 
 <p><em>(Knowledge I learned from <a href="http://www.amazon.com/Computer-Systems-A-Programmers-Perspective/dp/013034074X" title="Amazon link">Computer Systems: A programmer&#8217;s perspective</a>, and emphasize the mindset in secure coding course, if you forget the knowledge, hope this post can remind you pick your book up.)</em></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/18/why-i-translate-codermetrics/">我为什么翻译《程序员度量》—— 不以团队建设为目的的度量都是耍流氓</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-18T10:51:00+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>IT界大多数管理者都是从一线研发走过来的，我也如此，虽然，我现在又在尝试成为一名合格的程序员。</p>
+  <entry>
+    <title type="html"><![CDATA[我为什么翻译《程序员度量》—— 不以团队建设为目的的度量都是耍流氓]]></title>
+    <link href="http://erizhang.github.io/blog/2013/04/18/why-i-translate-codermetrics/"/>
+    <updated>2013-04-18T10:51:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/04/18/why-i-translate-codermetrics</id>
+    <content type="html"><![CDATA[<p>IT界大多数管理者都是从一线研发走过来的，我也如此，虽然，我现在又在尝试成为一名合格的程序员。</p>
 
 <p>很久以来的概念是，程序员的工作很难进行量化，你很难说写这一段代码真正需要花多少的时间，他坐在那里发愣，你很难说他是真的在发愣，还是在思考程序的逻辑实现，他的显示器屏幕在滚动，你很难发觉是他编写好的程序输出，还是他刚执行了几个<code>less</code>命令，或者执行了几个命令行批处理，打印出来应付你觉察的眼睛，他的键盘快速在响，你很难认为他不是在聊QQ或是在发微博&#8230;.以致于有段时间，办公室里流传着程序员需要读一读《演员的自我修养》这样的笑话，程序员工作的量化，取决于他的演技水平。</p>
 
@@ -368,7 +199,7 @@
 
 <p>而之于团队和程序员的度量，应该从多个维度进行，从产品类型的不同，从角色的要求不同等等，单一的数据可能毫无意义，但数据的组合可能会帮助我们发现隐藏在数据背后的洞察力。跟踪一段时间的响应度量，可以帮助我们对现实的工作做出调整，不断完善，做到可持续性。</p>
 
-<p><img src="/images/2013-04-18-why-i-translate-codermetrics/codermetrics-cn.jpg" title="codermetrics Chinese version coverpage" alt="Alt text" /></p>
+<p><img src="http://erizhang.github.io/images/2013-04-18-why-i-translate-codermetrics/codermetrics-cn.jpg" title="codermetrics Chinese version coverpage" alt="Alt text" /></p>
 
 <p>主要内容包括：</p>
 
@@ -404,42 +235,15 @@
 <p>而最后定义的价值度量，是一种量化个体技能如何在团队中产生价值的指标：影响力，效率，领先份额，胜场份额，输场份额，团队合作，守场，爆发力，战斗力等，而团队在不同的成长阶段，其值的分布也是有区别的。真正的度量，应该是以团队建设为目标，好的度量会告诉我们团队目前在哪？团队的方向在哪？团队现在要解决什么问题？度量不是评级。度量的使用是一个不断试错的过程，建立良好的数据收集方式，选择性的挑选度量指标，评估结果并调整，建立可供讨论的平台是我们接下来可以做的事。</p>
 
 <p>基于以上表述，个人觉得国内会有很多人与我有相同的问题需要解决，说不定这本书还能起到一些帮助。在朋友的鼓励下，应承下本书的翻译工作，但发现翻译工作真的是体力活，一是要求把原书的原意翻译给大家，二又得保证适合中文阅读习惯，工作量非常大，对于完全没有书本翻译经验的我来说，这是一个无法完成的任务，能找到最佳拍档真的很不容易，多谢有几位好朋友的加入，本书才得以完成出版，在这里要对他们三呼万岁，谢主隆恩。后来，圈子里的朋友告诉我，做外语书翻译是最吃力不讨好的事，翻得差了，被人骂，翻得好，读者会说是原作者写得好。现在想想，中文译本的书是否好读，不仅仅取决于原作者的水平，翻译者的贡献可谓功不可没。</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/12/programming-game-of-life-under-no-if-dot-else-dot-etc-condition-restriction/">Coderetreat: Programming Game of Life Under &#8216;No Conditional Expression&#8217; Restriction</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-12T23:51:00+08:00" pubdate data-updated="true">Apr 12<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>If you search this topic with &#8220;coderetreat&#8221;, &#8220;no if&#8221; or &#8220;no conditional expression&#8221; keywords, and if you are in coderetreat event right now, I suggest you close this topic, and after you finish the session, than open it again, and compare with your implementation, or comments your better implementation here.</p>
+  <entry>
+    <title type="html"><![CDATA[Coderetreat: programming game of life under 'no conditional expression' restriction]]></title>
+    <link href="http://erizhang.github.io/blog/2013/04/12/programming-game-of-life-under-no-if-dot-else-dot-etc-condition-restriction/"/>
+    <updated>2013-04-12T23:51:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/04/12/programming-game-of-life-under-no-if-dot-else-dot-etc-condition-restriction</id>
+    <content type="html"><![CDATA[<p>If you search this topic with &#8220;coderetreat&#8221;, &#8220;no if&#8221; or &#8220;no conditional expression&#8221; keywords, and if you are in coderetreat event right now, I suggest you close this topic, and after you finish the session, than open it again, and compare with your implementation, or comments your better implementation here.</p>
 
 <p>I have facilitated several coderetreat events, not master it, but experienced. When in the session with rule <strong><em>No conditional expression allowed</em></strong>, most of people will blame me why we have such restriction, or tell me WTF it&#8217;s impossiable if we programming in C language. Minutes later, someone would ask me, shall we use &#8220;while loop&#8221; or &#8220;for loop&#8221;instead of &#8220;if&#8221;, but I always say no. And later, someone told me that programming in OO polymorphism can be done, but how in C?</p>
 
@@ -455,7 +259,7 @@
 
 <p> So we can understand the next generation state will be based on two factors: current generation state (live or dead) and live neighours amount. We can define a two-dimensional array like below diagram illustrates:</p>
 
-<p> <img src="/images/2013-04-12/rule_map.png" title="Rule Map" alt="Alt text" /></p>
+<p> <img src="http://erizhang.github.io/images/2013-04-12/rule_map.png" title="Rule Map" alt="Alt text" /></p>
 
 <p>The first row means current generation state is dead (0), for corresponding live neighbours amount, the next generation state of this cell shall be what (The value of array defined); similar, the second row means current generation state is live (1), for correspding live neighbours amount, the next generation state is defined as the value of array. The formula is: <em><strong>rule_map[current state][live neighbours amount - 1] = next generation state</strong></em>, for example, if current cell&#8217;s state is dead, and it has 3 live neighbours, the result will be rule_map[0][3-1] = 1. The pseudocode shall be like this:</p>
 
@@ -485,42 +289,15 @@
 
 
 <p>So how to calculate the live neighbours amount of specific cell? Please you make a post for it. I&#8217;m not going to clarify everything here, or you can comment below. Have fun. :\</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/23/team-gethering-game/">Team Gathering Game</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-23T00:00:00+08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>There is a team gathering game what I learned from Shanghai Scrum Gathering in 2011, there was one facilitator from Taiwan shared to us, and I always play it with my trainee and team members.</p>
+  <entry>
+    <title type="html"><![CDATA[Team Gathering Game]]></title>
+    <link href="http://erizhang.github.io/blog/2013/03/23/team-gethering-game/"/>
+    <updated>2013-03-23T00:00:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/03/23/team-gethering-game</id>
+    <content type="html"><![CDATA[<p>There is a team gathering game what I learned from Shanghai Scrum Gathering in 2011, there was one facilitator from Taiwan shared to us, and I always play it with my trainee and team members.</p>
 
 <h2>The rule of the game:</h2>
 
@@ -547,42 +324,15 @@
 
 
 <p>Definitely, this game is funny, if you like this, you can copy this way, and play it with your members.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/01/28/structure-assignment-and-its-pitfall-in-C-language/">Structure Assignment and Its Pitfall in C Language</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-28T21:47:00+08:00" pubdate data-updated="true">Jan 28<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Problem</h2>
+  <entry>
+    <title type="html"><![CDATA[structure assignment and its pitfall in C language]]></title>
+    <link href="http://erizhang.github.io/blog/2013/01/28/structure-assignment-and-its-pitfall-in-C-language/"/>
+    <updated>2013-01-28T21:47:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/01/28/structure-assignment-and-its-pitfall-in-C-language</id>
+    <content type="html"><![CDATA[<h2>Problem</h2>
 
 <p>There is a structure type defined as below:</p>
 
@@ -722,7 +472,7 @@ The only thing you need to be aware of is that this is a shallow copy. In other 
 
 <p>Below diagram illustrates above source memory layout, if there is a pointer field member, either the straight assignment or <code>memcpy</code>, that will be alias of pointer to point same address. For example, <code>b.alias</code> and <code>c.alias</code> both points to address of <code>a.alias</code>. Once one of them free the pointed address, it will cause another pointer as dangling pointer. <strong>It&#8217;s dangerous!!</strong></p>
 
-<p><img src="/images/2013-01-28-structure-assignment-and-its-pitfall-in-C-language/structure_assignment.1-1.png" title="Illustrates above source code memory layout." alt="Alt text" /></p>
+<p><img src="http://erizhang.github.io/images/2013-01-28-structure-assignment-and-its-pitfall-in-C-language/structure_assignment.1-1.png" title="Illustrates above source code memory layout." alt="Alt text" /></p>
 
 <h2>Conclusion</h2>
 
@@ -741,42 +491,15 @@ The only thing you need to be aware of is that this is a shallow copy. In other 
 <li><a href="http://en.wikipedia.org/wiki/Struct_%28C_programming_language%29" title="struct in C programming language">wikipedia: struct in C programming language</a></li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/01/14/retrospective-of-my-2012/">Retrospective of My 2012</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-14T21:47:00+08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In our organization, we have a basic rule is: If you make retrospective for one specific sprint, you shall finish it in the sprint time slot. So it against our rule since I make 2012 retrospective in 2013, but later than never. I believe retrospective since I have ran agile for several years, I know it can benefit me.</p>
+  <entry>
+    <title type="html"><![CDATA[Retrospective of my 2012]]></title>
+    <link href="http://erizhang.github.io/blog/2013/01/14/retrospective-of-my-2012/"/>
+    <updated>2013-01-14T21:47:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/01/14/retrospective-of-my-2012</id>
+    <content type="html"><![CDATA[<p>In our organization, we have a basic rule is: If you make retrospective for one specific sprint, you shall finish it in the sprint time slot. So it against our rule since I make 2012 retrospective in 2013, but later than never. I believe retrospective since I have ran agile for several years, I know it can benefit me.</p>
 
 <p>My grandpa told my mother, and my mother told me that you have to look back and reflect on your life every night before you go to bed. It’s difficult for me, because I always tell story to my kid during that time, or do others, you know that&#8230; So I demand me shall make retrospective at least once annually.</p>
 
@@ -813,42 +536,15 @@ The only thing you need to be aware of is that this is a shallow copy. In other 
 <h2>What improvements are needed</h2>
 
 <p>A little fat, shall make a plan to resolve this problem. I shall learn some web technical in this web era, and be more active in open communities, learn more, and also shall seriously consider where I go. Maybe leave this country is a choice, even it’s not easy for a married man, but some friends made good example for this, so practice English communication skill is more important than before. I’ll continually post English blog here, translate English post to Chinese, and practice more. New year, hope can breathe fresh air, drink clear warter, and eat nontoxic food.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/12/20/build-up-octopress-blog/">Build Up Octopress Style Blog Site</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-12-20T00:00:00+08:00" pubdate data-updated="true">Dec 20<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Why I choose octopress?</h2>
+  <entry>
+    <title type="html"><![CDATA[Build up octopress style blog site]]></title>
+    <link href="http://erizhang.github.io/blog/2012/12/20/build-up-octopress-blog/"/>
+    <updated>2012-12-20T00:00:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2012/12/20/build-up-octopress-blog</id>
+    <content type="html"><![CDATA[<h2>Why I choose octopress?</h2>
 
 <p>I&#8217;m a programmer, and I&#8217;m also a lazy guy. One hand, a programmer will encounter quite a lots of questions and problems, such as algorithom making, post reading, open source community contribution, and bug fixing. On the other hand, I&#8217;m lazy, a lazy programmer will forget a lots of things, because he is lazy, and too things to memorize, so write them done on the source code will be a good way.</p>
 
@@ -860,7 +556,7 @@ The only thing you need to be aware of is that this is a shallow copy. In other 
 
 <p>I follow the official guide to <a href="http://octopress.org/docs/setup/" title="Setup Octopress">setup octopress</a>, that I can easily install the octopress on my Linux OS. After finish this, I was recommended to build up my blogs on github, since there is programmer&#8217;s private plots, we can plant anything what we want. And I managment my octopress and draft like below illustrates:</p>
 
-<p><img src="/images/2012-12-20-build-up-octopress-blog/my.octopress.repository.png" title="My octopress blogs git repository" alt="Alt text" /></p>
+<p><img src="http://erizhang.github.io/images/2012-12-20-build-up-octopress-blog/my.octopress.repository.png" title="My octopress blogs git repository" alt="Alt text" /></p>
 
 <p>Then I follow up the second guideline to <a href="http://octopress.org/docs/deploying/github/" title="deploy on github">deploy octopress blogs in github</a>. But another problem is comming, during you execute <code>rake setup_github_pages</code>, rake will ask you input your blog repository in <code>git</code> protocal (actually in SSH protocal), that&#8217;s my office network cannot support, in our office, we can support <code>https</code>. How I can resolve this issue?</p>
 
@@ -939,42 +635,15 @@ The only thing you need to be aware of is that this is a shallow copy. In other 
 <p>After that, <code>rake</code> can support <code>https</code>. Others, I only follow the official guideline, now you can see this post means I have successfully built up my blogs, and post blogs in office.</p>
 
 <p>Post blogs like programming, if you are programmer, just do it. Cheers!</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/12/18/facilitate-coderetreat/">Facilitate Coderetreat Global Day of 2012</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-12-18T10:51:00+08:00" pubdate data-updated="true">Dec 18<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Heard from Agile community, there would be codretreat global day activity, colleague Fred remind us this is a good opportunity to spread out the Agile engineering practice, and we decide to facilitate codereteat in Hangzhou city, as part of coderetreat global day 2012.</p>
+  <entry>
+    <title type="html"><![CDATA[Facilitate coderetreat global day of 2012]]></title>
+    <link href="http://erizhang.github.io/blog/2012/12/18/facilitate-coderetreat/"/>
+    <updated>2012-12-18T10:51:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2012/12/18/facilitate-coderetreat</id>
+    <content type="html"><![CDATA[<p>Heard from Agile community, there would be codretreat global day activity, colleague Fred remind us this is a good opportunity to spread out the Agile engineering practice, and we decide to facilitate codereteat in Hangzhou city, as part of coderetreat global day 2012.</p>
 
 <h2>What&#8217;s the coderetreat</h2>
 
@@ -1008,9 +677,9 @@ The only thing you need to be aware of is that this is a shallow copy. In other 
 
 <p>We took 6 sessions for each rule, and wrap up in the end. Also had video connecting with other cities (Beijing, Shanghai, Taiyuan, Tokyo, Singapore, Hanoi, Ho Chi Minh) via google hangout.</p>
 
-<p><img src="/images/2012-12-18-facilitate-coderetreat/coderetreat-2.jpg" title="Discussion" alt="Alt text" /></p>
+<p><img src="http://erizhang.github.io/images/2012-12-18-facilitate-coderetreat/coderetreat-2.jpg" title="Discussion" alt="Alt text" /></p>
 
-<p><img src="/images/2012-12-18-facilitate-coderetreat/coderetreat-3.jpg" title="Rules Wall" alt="Alt text" /></p>
+<p><img src="http://erizhang.github.io/images/2012-12-18-facilitate-coderetreat/coderetreat-3.jpg" title="Rules Wall" alt="Alt text" /></p>
 
 <h2>Sponsor</h2>
 
@@ -1020,7 +689,7 @@ The only thing you need to be aware of is that this is a shallow copy. In other 
 
 <p>Since this is an open event, we were looking forward to more programmers come from different company and industry, and coding in different programming language, it will increase the idea diversity, so we advertise on social networks. But later just come 2 persons from outside our company, it prove our advertisement was failed. So, if we plan to facilitate same event, we will advertise on some programming community will be better.</p>
 
-<p><img src="/images/2012-12-18-facilitate-coderetreat/coderetreat-1.jpg" title="I'm not in picture" alt="Alt text" /></p>
+<p><img src="http://erizhang.github.io/images/2012-12-18-facilitate-coderetreat/coderetreat-1.jpg" title="I'm not in picture" alt="Alt text" /></p>
 
 <p>Of cause, the advertisement inside our company is quite good, there were more then 20 programmers coming.</p>
 
@@ -1033,128 +702,36 @@ The only thing you need to be aware of is that this is a shallow copy. In other 
 <p>As my feeling, the event is successful, and quite many people ask me when we will facilitate same event after then. Also, help people to build the modern programming awareness, and change the mindset of that limitation (restriction) is not impediment, instead it demends you think more, it likes the matchstick to light your thinking, open your mind.</p>
 
 <p>More pictures from Hangzhou GDCR 2012, please click <a href="http://coderetreat.org/photo/album/show?id=6456126%3AAlbum%3A18835&amp;xg_source=activity," title="GDCR2012 Hangzhou">here</a>.</p>
-</div>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[怎样创建一家软件公司]]></title>
+    <link href="http://erizhang.github.io/blog/2012/01/12/how-to-start-a-software-company/"/>
+    <updated>2012-01-12T23:06:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2012/01/12/how-to-start-a-software-company</id>
+    <content type="html"><![CDATA[<p>在Quora里，无意中看到这样一个问题: <a href="http://www.quora.com/I-want-to-start-a-software-company-in-India-how-shall-I-start-and-plan-that-currently-i-work-as-IT-project-manager" title="Question">我目前是IT项目经理，想在印度创建一家公司，我应该如何开始和规划？</a>
+名叫Unni Krishnan Koroth的人回答到：</p>
+
+<ul>
+<li>不要辞去你现在的工作；</li>
+<li>寻找一位合伙人。如果你拥有技术背景的人（我们称之为“黑客”），那么请寻找一位善于营销，并且可以从你们未来的客户那里收钱的人（我们称之为“海盗”）。如果他目前没有其他正式的工作，那么他可以更多的关心公司的构建和其他工作，而这一切都需要在你目前的工作持续支持下进行。</li>
+<li>把这一切告诉你的家人。值得注意的是，在印度，企业家移民的社会地位是非常低微的， 只有在他们取得成功之后，社会地位才会提升。如果你有财务保证，那么在你辞去你目前的工作之前就做好这个保证。你需要一个清晰而专注的想法来开始你的公司。</li>
+<li>筹集备用基金。再接下来的3年里，每年至少50,000卢比的开销。建立一个好的公司至少需要3年。</li>
+<li>不要创建办公室。不要招聘员工。如果你是在做一单生意，你需要尽可能地自己竭尽全力去完成。（作者给出了一个<a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=7KLnXjqKL5g" title="Youtube link">Youtube视频链接</a> )</li>
+</ul>
+
+
+<p> <div class="embed-video-container"><iframe src="http://www.youtube.com/embed/7KLnXjqKL5g "></iframe></div></p>
+
+<ul>
+<li>如果你正在办理辞职，请记住，不要断了自己的财路。跟自己现在的公司保持良好的关系 （<strong><em><em>译注：现在的公司可能会是自己未来的顾客或生意上的伙伴</em></em></strong>）</li>
+<li>注册一家公司和一个好的域名。开始为你的客户工作，并关注是否给客户带来真正的价值。</li>
+<li>请记住“人们总是高估自己一年里可以取得的成绩，而往往低估了自己十年内可以取得的成就”</li>
+<li>节省每一分钱。并且学会享受你的潜在客户对你的拒绝。</li>
+</ul>
+
+]]></content>
+  </entry>
   
-
-
-    </article>
-  
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/06/25/bee-watcher/">Bee Watcher</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/30/exception-has-been-normal/">Exception has been normal</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/27/take-care-of-your-integer-variable/">Take care of your integer variables</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/18/why-i-translate-codermetrics/">我为什么翻译《程序员度量》—— 不以团队建设为目的的度量都是耍流氓</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/12/programming-game-of-life-under-no-if-dot-else-dot-etc-condition-restriction/">Coderetreat: programming game of life under &#8216;no conditional expression&#8217; restriction</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/23/team-gethering-game/">Team Gathering Game</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/01/28/structure-assignment-and-its-pitfall-in-C-language/">structure assignment and its pitfall in C language</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/01/14/retrospective-of-my-2012/">Retrospective of my 2012</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/12/20/build-up-octopress-blog/">Build up octopress style blog site</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/12/18/facilitate-coderetreat/">Facilitate coderetreat global day of 2012</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2012-2013 - Eric Zhang -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'actionary';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id; js.async = true;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
