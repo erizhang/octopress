@@ -7,7 +7,7 @@ categories: thinking
 author: Eric Zhang
 ---
 
-之前与[Terry](http://www.weibo.com/u/1431854415 "Terry's Weibo")一起聊天，聊到一个叫做[Bee Watcher](http://www.drseussart.com/details/illustration/beewatcher.html "The Bee Watcher")的故事，觉得挺有意思的。话说，一位农场主为了提高蜂蜜的产量，他在资深顾问的建议下，请了一位**看蜂人**(Bee Watcher)，**看蜂人**的任务就是监督蜜蜂采蜜，以此来提高产量。可是实际情况是，蜜蜂并没有因为有了**看蜂人**的存在而改变采蜜的方法，它们还是按部就班的从一朵花飞到另一朵花，飞来飞去忙个不停。一年下来，产量没有提高，农场主认为产量没有提高的原因，是因为**看蜂人**看得不够努力，于是雇了一位**看看蜂人**(Bee Watcher Watcher)来监督**看蜂人**的工作，可是，有了**看看蜂人**，**看蜂人**还是像过去一样努力地盯着蜜蜂们忙来忙去，并没有因为有了**看看蜂人**，**看蜂人**就眼晴睁得更大点。一年又过去了，蜂蜜的产量还是没有提高，分析原因，农场主得出了结论是因为**看看蜂人**监督**看蜂人**监督蜜蜂采蜜不够努力，于是他又雇了名**看看看蜂人**(Bee Watcher Watcher Watcher)来监督**看看蜂人**监督**看蜂人**监督蜜蜂采蜜的工作。一年又一年，越来越多的**看看看...看峰人**(Bee Watcher Watcher ..... Watcher)，产量还是没有提高，而生产成本却一年比一年高。
+之前与[Terry](http://www.weibo.com/u/1431854415 "Terry's Weibo")一起聊天，聊到一个叫做[Bee Watcher](http://www.drseussart.com/details/illustration/beewatcher.html "The Bee Watcher")的故事，觉得挺有意思的。话说，一位农场主为了提高蜂蜜的产量，他在资深顾问的建议下，请了一位看蜂人(Bee Watcher)，看蜂人的任务就是监督蜜蜂采蜜，以此来提高产量。可是实际情况是，蜜蜂并没有因为有了看蜂人的存在而改变采蜜的方法，它们还是按部就班的从一朵花飞到另一朵花，飞来飞去忙个不停。一年下来，产量没有提高，农场主认为产量没有提高的原因，是因为看蜂人看得不够努力，于是雇了一位看看蜂人(Bee Watcher Watcher)来监督看蜂人的工作，可是，有了看看蜂人，看蜂人还是像过去一样努力地盯着蜜蜂们忙来忙去，并没有因为有了看看蜂人，看蜂人就眼晴睁得更大点。一年又过去了，蜂蜜的产量还是没有提高，分析原因，农场主得出了结论是因为看看蜂人监督看蜂人监督蜜蜂采蜜不够努力，于是他又雇了名看看看蜂人(Bee Watcher Watcher Watcher)来监督看看蜂人监督看蜂人监督蜜蜂采蜜的工作。一年又一年，越来越多的看看看...看峰人(Bee Watcher Watcher ..... Watcher)，产量还是没有提高，而生产成本却一年比一年高。
 
 ![Alt text](/images/2013-06-25/beewatcher_lg.gif "The Bee Watcher")
 
