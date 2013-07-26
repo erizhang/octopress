@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "程序员上多扫盲"
+title: "程序员上网扫盲"
 date: 2013-07-26 11:31
 comments: true
 categories: programmer
