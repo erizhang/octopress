@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programmer | Actionary]]></title>
   <link href="http://erizhang.github.io/blog/categories/programmer/atom.xml" rel="self"/>
   <link href="http://erizhang.github.io/"/>
-  <updated>2013-07-26T15:51:05+08:00</updated>
+  <updated>2013-07-28T21:24:22+08:00</updated>
   <id>http://erizhang.github.io/</id>
   <author>
     <name><![CDATA[Eric Zhang]]></name>
@@ -102,11 +102,15 @@
 
 <p>我听说过两件odesk的趣事，一件是分包的是。据说一位牛人，他在他们公司的绩效特别好，交待给他的事，他都很好地完成掉了，所以，他工资特别高，但最后发现，他的工作都被他在网上分包给了中国的一些开发者。还有一件是关于承包的，有一位程序员决定环球旅游，然后他带好了电脑，还有上网的辅助设备，在旅途上，边看风景，边在odesk承包项目，而且赚到了比在前公司工作还多的收入。</p>
 
-<h2>在线协作平台 Google Doc(Drive)，Google Hangout， Dropbox</h2>
+<h2>在线协作平台 Google Doc(Drive)，Google Hangout， Dropbox, Trello</h2>
 
 <p>除了github可以提供一套协作的流程外，Google Doc也或者叫Drive，也是个好东西，现在我们几个朋友之间常用这个工具来协作完成一些slides，文档，或者excel。还记得最早用Google Wave的时候，现在Google Doc跟它相比，可是巨大的飞跃。此外，我们还用<a href="http://www.dropbox.com" title="dropbox">Dropbox</a>来存储我们需要的东西，如做远程的git repository，做一些文稿的协作撰写。</p>
 
 <p>当我们在协作过程中遇到任何问题需要交流的时候，Google Hangout提供了视频会议功能。而这些都是免费的服务，我们用Gmail收发邮件，Google Calendar做日程安排。一切都自然而流畅。</p>
+
+<p>如果你的团队是用Scrum或者Kanban之类的开发模式，需要用到团队的任务的Backlog的话，那么<a href="https://trello.com/," title="Trello.com">Trello</a>将会是一个不错的辅助工具。你能通过它定制列表，如你可以定制一般Scrum的列表：TODO, In Progress, Done等，也可以定制Kanban的列表：User Story，设计，编码，测试等互为依赖的状态列表。另外，你团队成员的状态也会显示在上具上，你可以清楚地知道谁在负责哪个任务，也可以即时地与之联系。</p>
+
+<p>除之此外，作为程序员，你可以在<a href="https://coderwall.com/welcome" title="Coderwall.com">coderwall</a>上把你的Profile建立起来，它会根据你在github上的项目和开发语言，给你列出一枚枚徽章。然后与朋友或同事在coderwall上建立团，我们目前给公司在coderwall上建了一个团队，目前全球排名已经到了七百多名，如果你会加入的话，我们的排名会更靠前。</p>
 
 <h2>社交网站 twitter, facebook, linkedin, grossdoor</h2>
 
