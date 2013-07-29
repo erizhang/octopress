@@ -101,7 +101,7 @@ Sourceforge，google code离我们越来越远，而github却离我们却越来�
 
 除之此外，作为程序员，你可以在[coderwall](https://coderwall.com/welcome "Coderwall.com")上把你的Profile建立起来，它会根据你在github上的项目和开发语言，给你列出一枚枚徽章。然后与朋友或同事在coderwall上建立团，我们目前给公司在coderwall上建了一个团队，目前全球排名已经到了七百多名，如果你会加入的话，我们的排名会更靠前。
 
-## 社交网站 twitter, facebook, linkedin, grossdoor
+## 社交网站 twitter, facebook, linkedin, glassdoor
 
 这是最不需要分享的章节，只是我们生活在四周砌满高墙的国家，所需要做的只是“科学上网”，那么你听说过fqrouter, goagent吗？follow对人也很重要，我记得有位朋友跟我讲，他的微博里都是公知和五毛，天天吵，烦死了。我跟他讲，因为你本身想成为公知或五毛，所以才会有那么多的公知和五毛在他的微博里，如果你不想要他们的争吵，unfollow他们，帐号在你手里。
 
