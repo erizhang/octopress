@@ -52,9 +52,9 @@ Of cause, the advertisement inside our company is quite good, there were more th
 
 ## Problem for programming
 
-The problem is [Game of life](http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life, "Conway's Game of Life"), programming language is no restrict, actually, we encourage people use strange language.
+The problem is [Game of life](http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life "Conway's Game of Life"), programming language is no restrict, actually, we encourage people use strange language.
 
 
 As my feeling, the event is successful, and quite many people ask me when we will facilitate same event after then. Also, help people to build the modern programming awareness, and change the mindset of that limitation (restriction) is not impediment, instead it demends you think more, it likes the matchstick to light your thinking, open your mind.
 
-More pictures from Hangzhou GDCR 2012, please click [here](http://coderetreat.org/photo/album/show?id=6456126%3AAlbum%3A18835&xg_source=activity, "GDCR2012 Hangzhou").
+More pictures from Hangzhou GDCR 2012, please click [here](http://coderetreat.org/photo/album/show?id=6456126%3AAlbum%3A18835&xg_source=activity "GDCR2012 Hangzhou").
