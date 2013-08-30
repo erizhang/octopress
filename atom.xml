@@ -4,7 +4,7 @@
   <title><![CDATA[Actionary]]></title>
   <link href="http://erizhang.github.io/atom.xml" rel="self"/>
   <link href="http://erizhang.github.io/"/>
-  <updated>2013-08-07T15:06:09+08:00</updated>
+  <updated>2013-08-30T13:06:42+08:00</updated>
   <id>http://erizhang.github.io/</id>
   <author>
     <name><![CDATA[Eric Zhang]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why we need visual task board]]></title>
+    <link href="http://erizhang.github.io/blog/2013/08/30/why-we-need-visual-task-board/"/>
+    <updated>2013-08-30T11:31:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/08/30/why-we-need-visual-task-board</id>
+    <content type="html"><![CDATA[<p>The department which I&#8217;m working on, it&#8217;s the first team adopted Scrum in China, so our people mostly seems ourselves is the Scrum forerunner in China. Year and year, day after day, we did various Scrum practices, And while the R&amp;D is growing in size, and with people change in the organization, people have been forgetting the rationale behind these practices, and thinking Scrum is such practices, Such practices are Scrum. But one day, we were questioned by our naive boy: Why?</p>
+
+<p>Today, let’s go through why we need visual task board? Why we not use excel instead? Or some on-line task management tools such like Trello?</p>
+
+<h2>Understand the team situation likes looking at a picture</h2>
+
+<p>Paste the task on the wall with different priority, under sprint schedule move forward, the task will be moved from “TODO” column to “DONE” column, it’s easier understand the team work iteration item progress. If on one time point, the most of task paper still is under the “TODO” column, it means we still have a lot work need to be done; if the most of task paper is under “DONE” column, we can understand it’s not far from our target.</p>
+
+<p>“IN PROGRESS” reflects team daily work. If too many tasks are under this column,  it means there is something wrong about the task assignment – either the task estimation has some problem or team is too optimistic. The total size of the tasks under “IN PROGRESS” shall be equal as the team daily capacity.</p>
+
+<p>Of cause, we can use various color paper to represent the regular planning tasks or interrupt tasks, based on the interrupt tasks number, we can understand how well we did sprint planning.</p>
+
+<p>Adding “BLOCKING” column, we can clearly find out how many tasks are blocked by other teams. We can make various changes of task board based on team needs, task board shall illustrates the team work situation clearly. Team member just raise his/her head, he/she can understand how well we work on our task, it’s leading, or delay. Team work is transparent, any one in any time can understand team situation.</p>
+
+<h2>Programmers are “lazybones”</h2>
+
+<p>I remember one words said: the innovators are lazybones. Because they are lazy, so they are motivated to innovate something instead of hard working. And later, this words has been evolved to: the high IQ people is lazybones. It comes “Innovators are high IQ people”. And now, programmers seems themselves as high IQ people, so programmer shall play as lazy style. Innovator == lazybones; innovator == high IQ people; high IQ people == lazybones è if you want to make self look like high IQ people, play lazybones, so that’s the logic, J</p>
+
+<p>So, for lazybones, require him/her to look for a document and open it, it’s very difficult, because he/she think there were too many steps. We can image that if we require lazybones read a document which located on a website:</p>
+
+<ol>
+<li>Visit the website</li>
+<li>Look for the document</li>
+<li>Download the document</li>
+<li>Open the document via MS office (WTF office, why you are so slow)</li>
+<li>Reading, and there are page up and page down</li>
+</ol>
+
+
+<p>Same reason, how make lazybones care about the task board? If we use excel to keep the tasks, what the situation will be:</p>
+
+<p>During the daily meeting, Scrum Master open the laptop, and then all team member gather around the only 15 inch screen, you open your big eyes, and focus on only 10 font size words, to make the task updating. In another times except Scrum Master open this task list excel, the lazybones never open this document any more, since open this excel will cost too many steps – the in time task updating is a problem.</p>
+
+<p>If we have task board, all tasks are written on the paper, and clearly paste on the wall. You just give a sight, you can find out the task, for the task updating, you only need to move the paper. See, easy.</p>
+
+<h2>It’s not only a wall, it’s team flag</h2>
+
+<p>How prove team existence? Name, flag.  Every day, all team member gathering under the wall, it’s solid entity, you will found that, this wall represents the team. Team member will think this is our team platform, we have something to do on this place. So during we create the task board, it means we are creating the team flag.</p>
+
+<h2>End</h2>
+
+<p>I can understand, you prepare a lots of reason here to prove why you need excel to keep the task list. That’s fine, give your comments below, let me understand your reason first. I just want to say, the confident team, ready to show muscle. Be a “lazy” and high efficiency team, start from build a visual task board.
+- EOF -</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[程序员上网扫盲]]></title>
