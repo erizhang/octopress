@@ -62,7 +62,7 @@ Type the http address of gerrit service on browser, in this case, it's [http://1
 
 Create new project, and "Rights Inherit From" shall be "All-Projects", it means current you created project configuration(such as access control) will inherit from "All-Projects" project, of cause, you can select inherit from empty, or define your project owned properties by yourself.
 
-![Alt text](images/2013-10-10-gerrit-jenkins-subversion-integration/create_new_gerrit_project.png "Create new project")
+![Alt text](/images/2013-10-10-gerrit-jenkins-subversion-integration/create_new_gerrit_project.png "Create new project")
 Figure 1-1
 
 After create this project, it means create a new project git repository under gerrit git repositories folder. In this case, the new project git repository is [http://192.168.1.100:8081/gameoflife_java](http://192.168.1.100:8081/gameoflife_java "project repository"). You can clone this project in your local PC by execute this command.
@@ -136,7 +136,7 @@ To http://192.168.1.100:8081/gameoflife_java
 client@client-Workstation-Workstation:~/workspace/gameoflife_java$ 
 </pre>
 Please notice that there is <code>remote:   http://192.168.1.100:8081/1</code>, for this change, there is change-id generated, and developer can distribute this URL to reviewer for source code review. Let's open this link with our web browser:
-![Alt text](images/2013-10-10-gerrit-jenkins-subversion-integration/change_webpage.png  "Change web page")
+![Alt text](/images/2013-10-10-gerrit-jenkins-subversion-integration/change_webpage.png  "Change web page")
 
 Okay, reviewer or project owner can review this source code changes, approve the change and submit the change to master. Based on current basic configuration, only project owner and gerrit administrator have permission to approve the changes and submit the changes. In reality, the project process is not easy like that, we decide to nominate a group of people to take the key reviewer role of our project, only key reviewer can approve the final review.
 
@@ -144,11 +144,11 @@ Okay, reviewer or project owner can review this source code changes, approve the
 
 #### Create ReviewBoard group and add the members
 Login gerrit web UI with administrator, select "People" -> "Create New Group" 
-![Alt text](images/2013-10-10-gerrit-jenkins-subversion-integration/create_reviewboard_group.png "Create ReviewBoard Group")
+![Alt text](/images/2013-10-10-gerrit-jenkins-subversion-integration/create_reviewboard_group.png "Create ReviewBoard Group")
 
 #### Access control of the new create group
 Select our created project, there is "Access", click and edit it. "Add reference" for <code>refs/heads/*</code> and <code>refs/meta/config</code> separately, see below diagram illustrate:
-![Alt text](images/2013-10-10-gerrit-jenkins-subversion-integration/add_label_review_access_control.png "Add Lebel Review Access permission to ReviewBoard")
+![Alt text](/images/2013-10-10-gerrit-jenkins-subversion-integration/add_label_review_access_control.png "Add Lebel Review Access permission to ReviewBoard")
 
 Till now, we have create new Group named "ReviewBoard", and all members in this group have "Label Review" access control, in another words, they can approve the source code review. More information about access control, you can refer the gerrit official document [Access Control](http://gerrit.googlecode.com/svn/documentation/2.1/access-control.html "access control") section.
 
@@ -183,7 +183,7 @@ Open your browser, and type the jenkins address, here we use [http://192.168.1.2
 
 Select the plugin, and install without restart, the process which shows like this.
 
-![Alt text](images/2013-10-10-gerrit-jenkins-subversion-integration/jenkins_plugin_success_installed.png "Install Jenkins plugin successfully")
+![Alt text](/images/2013-10-10-gerrit-jenkins-subversion-integration/jenkins_plugin_success_installed.png "Install Jenkins plugin successfully")
 
 ### 4.2. Generate jenkins needs ssh-key for <code>Gerrit Trigger</code> usage
 
@@ -232,11 +232,11 @@ Now we have create a new gerrit account <code>jenkins</code>, this account will 
 
 Select "Manage Jenkins" --> "Gerrit Trigger", you can enter into the <code>Gerrit Trigger</code> pages. Fill your Gerrit server host address, user name which represents jenkins to access gerrit, ssh keys etc., and click "Test Connection". It will show success or not. See below diagram shows. 
 
-![Alt-text](images/2013-10-10-gerrit-jenkins-subversion-integration/jenkins_gerrit_trigger_configure.png "Configure Gerrit Trigger")
+![Alt-text](/images/2013-10-10-gerrit-jenkins-subversion-integration/jenkins_gerrit_trigger_configure.png "Configure Gerrit Trigger")
 
 After then, save your settings and restart the connection in the "Control" section at the bottom of the page:
 
-![Alt-text](images/2013-10-10-gerrit-jenkins-subversion-integration/gerrit_trigger_control_restart.png)
+![Alt-text](/images/2013-10-10-gerrit-jenkins-subversion-integration/gerrit_trigger_control_restart.png)
 
 
 ### 4.5. Add <code>Label Verified</code> Access Control to <code>jenkins</code> account
