@@ -21,7 +21,7 @@ So, from developer perspective of view, he/she can focus on source code changing
 Of cause, if your organization still using subversion, you can use subgit to sync the changes between subversion and gerrit.
 
 ### 1.2. Architecture
-![Alt text](images/2013-10-10-gerrit-jenkins-subversion-integration/Gerrit_Jenkins_Subversion_Inegration.png "Integration Architecture") 
+![Alt text](/images/2013-10-10-gerrit-jenkins-subversion-integration/Gerrit_Jenkins_Subversion_Inegration.png "Integration Architecture") 
 
 Team can use subgit mirror the project to team owned gerrit server, and then team member clone the project to their local disk. Any changes making will be happen in local repository, after changes done. Developer can push the changes to remote repository (i.e., the gerrit server git repository). Once the changes is pushed to the server, gerrit will trigger jenkins to verify the changes (Compiling, unit testing, regression testing etc. CI jobs will be ran), and meanwhile, gerrit will send the review request mail to dedicated reviewer. After the reviewer approved the changes and jenkins verified okay, the source code changes can be merged into project master which is located in gerrit git repository. Otherwise, developer shall rework and push new patch again.
 
