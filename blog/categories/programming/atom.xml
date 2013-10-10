@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Actionary]]></title>
   <link href="http://erizhang.github.io/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://erizhang.github.io/"/>
-  <updated>2013-10-10T17:18:54+08:00</updated>
+  <updated>2013-10-10T17:30:50+08:00</updated>
   <id>http://erizhang.github.io/</id>
   <author>
     <name><![CDATA[Eric Zhang]]></name>
@@ -313,7 +313,23 @@ Branch meta/config set up to track remote branch meta/config from origin.
 Switched to a new branch 'meta/config'
 client@client-Workstation:~/tmp/a$ ls
 groups  project.config
-client@client-Workstation:~/tmp/a$ vim project.config
+</pre>
+
+
+<p>Open <code>project.config</code>, and append below lines into the file.</p>
+
+<pre>
+[label "Verified"]
+       function = MaxWithBlock
+       value = -1 Fails
+       value =  0 No score
+       value = +1 Verified
+</pre>
+
+
+<p>Execute below commands, to update the configuration.</p>
+
+<pre>
 client@client-Workstation:~/tmp/a$ git commit -a -m 'add verified label'
 [meta/config 09b3910] add verified label
  1 file changed, 6 insertions(+)
