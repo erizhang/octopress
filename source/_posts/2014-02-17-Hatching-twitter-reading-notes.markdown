@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "一群IT屌丝成为高富帅的故事 ——《孵化: Twitter从蛮荒到IPO的狂野旅程》读书笔记"
+title: "一群IT屌丝成为高富帅的故事 ——《孵化Twitter: 从蛮荒到IPO的狂野旅程》读书笔记"
 date: 2014-02-17 15:31
 comments: true
 categories: reading
