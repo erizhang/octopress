@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: thinking | Actionary]]></title>
+  <link href="http://erizhang.github.io/blog/categories/thinking/atom.xml" rel="self"/>
+  <link href="http://erizhang.github.io/"/>
+  <updated>2014-02-21T13:45:53+08:00</updated>
+  <id>http://erizhang.github.io/</id>
+  <author>
+    <name><![CDATA[Eric Zhang]]></name>
+    <email><![CDATA[zhang.lyuan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Bee Watcher]]></title>
+    <link href="http://erizhang.github.io/blog/2013/06/25/bee-watcher/"/>
+    <updated>2013-06-25T17:31:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/06/25/bee-watcher</id>
+    <content type="html"><![CDATA[<p>之前与<a href="http://www.weibo.com/u/1431854415" title="Terry's Weibo">Terry</a>一起聊天，聊到一个叫做<a href="http://www.drseussart.com/details/illustration/beewatcher.html" title="The Bee Watcher">Bee Watcher</a>的故事，觉得挺有意思的。话说，一位农场主为了提高蜂蜜的产量，他在资深顾问的建议下，请了一位看蜂人(Bee Watcher)，看蜂人的任务就是监督蜜蜂采蜜，以此来提高产量。可是实际情况是，蜜蜂并没有因为有了看蜂人的存在而改变采蜜的方法，它们还是按部就班的从一朵花飞到另一朵花，飞来飞去忙个不停。一年下来，产量没有提高，农场主认为产量没有提高的原因，是因为看蜂人看得不够努力，于是雇了一位看看蜂人(Bee Watcher Watcher)来监督看蜂人的工作，可是，有了看看蜂人，看蜂人还是像过去一样努力地盯着蜜蜂们忙来忙去，并没有因为有了看看蜂人，看蜂人就眼晴睁得更大点。一年又过去了，蜂蜜的产量还是没有提高，分析原因，农场主得出了结论是因为看看蜂人监督看蜂人监督蜜蜂采蜜不够努力，于是他又雇了名看看看蜂人(Bee Watcher Watcher Watcher)来监督看看蜂人监督看蜂人监督蜜蜂采蜜的工作。一年又一年，越来越多的看看看...看峰人(Bee Watcher Watcher ..... Watcher)，产量还是没有提高，而生产成本却一年比一年高。</p>
+
+<p><img src="/images/2013-06-25/beewatcher_lg.gif" title="The Bee Watcher" alt="Alt text" /></p>
+
+<p><em>picture from <a href="http://www.drseussart.com/details/illustration/beewatcher.html" title="The Bee Watcher">The Bee Watcher - The Art of Dr. Seuss</a></em></p>
+
+<p>我很喜欢这个故事，不是因为绕口令一样的角色名字，而是让我发现了身边藏着的Bee Watcher。我们制定了一个Process，期望它能极大地改善我们的研发状况，可是发现不尽如人意，原因可能是Process执行得不到位，于是，我们制定了更多的Process来确保我们的Process能更好地得到执行。这难道不是一个Bee Watcher。你发现了吗？请将更多的Bee Watcher以Comments形式告诉我吧，对我而言，这一定会是一个不错的收获。:\</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Exception has been normal]]></title>
+    <link href="http://erizhang.github.io/blog/2013/05/30/exception-has-been-normal/"/>
+    <updated>2013-05-30T18:31:00+08:00</updated>
+    <id>http://erizhang.github.io/blog/2013/05/30/exception-has-been-normal</id>
+    <content type="html"><![CDATA[<p>My friend Simon talked with me, he would like to buy some instant coffee or ice cream in supermarket, but he found that, all of them including one ingredient is non-dairy creamer(植脂末). This ingredient is used to make the drink more smooth, it's a replacement of milk, but it's bad for human health. Any way, it's better than melamine(三聚氰胺). Nowadays, you are hard to find instant coffee without non-dairy in China.</p>
+
+<p>Another story what I heard there is a government department named as "temporary emergency processing center for cover of sewer well" (窨井盖临时应急处理中心) is hiring a fixed officer. And as government perspective view, this department will be always existed even the name including "temporary", the reason is they have to alwyas handle the "temporary" &amp; "emergency" issue. But as I know, the cover of sewer well shall be managed by municipal administration.</p>
+
+<p>The third story is restrict the car to solve the traffic jam, i.e. if the last digit of your car license plate number is 1 or 9, your car will be ban on road on Monday, 2 or 8 will be ban on road on Tuesday, and so on.... This is a temporary solution for traffic jam issue, but currently, it's becoming a final solution, it's normal for administration department.</p>
+
+<p>So we can understand from those stories, once problem happen, there will be temporary solution coming, in programming area, we called "workaround", and there is no further analysis, and temporary solution will act as final solution, workaround will act as solution. Once there is another problem happen, there will be another temporary solution coming, or another "workaround" be used. A workaround helps to solve another workaround, and another workaround is used to solve another another workaround problem....</p>
+
+<p>But why? I often ask this question to myself and my colleague. It might be caused by lazy, yes, that's one reason. But another problem in government administration area, the temporary solution can solve some problems of employment, and there will be more position for officer ask, even it's not needed. In software programming area as well, more workaround, more maintenance is needed, and more engineers are needed. But all of us forget one thing is find out the root cause, and fix it.</p>
+
+<p>If exception has been normal, around of you use workaround solve another problem of workaround, it means the situation around of you has been worse, you need to consider quit only if you can solve it. :\</p>
+]]></content>
+  </entry>
+  
+</feed>
