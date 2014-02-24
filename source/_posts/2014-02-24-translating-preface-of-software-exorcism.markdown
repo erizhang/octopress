@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "驱魔人 ——《软件驱魔术》译者序"
+title: "驱魔人 ——《软件驱魔术》(*Software Exorcism*)译者序"
 date: 2014-02-24 16:31
 comments: true
 categories: thinking
