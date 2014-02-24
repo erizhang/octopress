@@ -1,9 +1,9 @@
-﻿---
+---
 layout: post
 title: "驱魔人 ——《软件驱魔术》译者序"
-date: 2014-02-24 15:31
+date: 2014-02-24 16:31
 comments: true
-categories: programming
+categories: thinking
 author: Eric Zhang
 ---
 
@@ -25,8 +25,9 @@ author: Eric Zhang
 
 我们的小伙伴们：郑建琴，王刚，余鹰伟，周峰，凌建发，宓媛珊，吴恩平（排名不分先后），感谢你们。
 
-译者
+译者 
 
 于杭州，
 2014年下雪的春天
+
 - End - 
