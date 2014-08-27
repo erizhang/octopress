@@ -13,3 +13,5 @@ vendor
 node_modules
 source/_posts/#*#
 source/_posts/*~
+Gemfile.lock
+
