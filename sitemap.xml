@@ -2,6 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://erizhang.github.io/blog/2012/01/12/how-to-start-a-software-company/</loc>
+<<<<<<< HEAD
         <lastmod>2013-05-31T13:29:00+08:00</lastmod>
     </url>
     <url>
@@ -15,21 +16,45 @@
     <url>
         <loc>http://erizhang.github.io/blog/2013/01/14/retrospective-of-my-2012/</loc>
         <lastmod>2013-05-31T13:29:00+08:00</lastmod>
+=======
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2012/12/18/facilitate-coderetreat/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2012/12/20/build-up-octopress-blog/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2013/01/14/retrospective-of-my-2012/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+>>>>>>> 9669491508f4084d561576a5cad5cd0dfcb513f0
     </url>
     <url>
         <loc>
             http://erizhang.github.io/blog/2013/01/28/structure-assignment-and-its-pitfall-in-C-language/
         </loc>
+<<<<<<< HEAD
         <lastmod>2013-05-31T13:29:00+08:00</lastmod>
     </url>
     <url>
         <loc>http://erizhang.github.io/blog/2013/03/23/team-gethering-game/</loc>
         <lastmod>2013-05-31T13:29:00+08:00</lastmod>
+=======
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2013/03/23/team-gethering-game/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+>>>>>>> 9669491508f4084d561576a5cad5cd0dfcb513f0
     </url>
     <url>
         <loc>
             http://erizhang.github.io/blog/2013/04/12/programming-game-of-life-under-no-if-dot-else-dot-etc-condition-restriction/
         </loc>
+<<<<<<< HEAD
         <lastmod>2013-05-31T13:29:00+08:00</lastmod>
     </url>
     <url>
@@ -59,11 +84,43 @@
     <url>
         <loc>http://erizhang.github.io/blog/2013/08/30/why-we-need-visual-task-board/</loc>
         <lastmod>2013-09-04T14:43:51+08:00</lastmod>
+=======
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2013/04/18/why-i-translate-codermetrics/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2013/04/27/take-care-of-your-integer-variable/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2013/05/30/exception-has-been-normal/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2013/06/25/bee-watcher/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2013/07/08/codermetrics-in-scrumgathering/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2013/07/26/how-programmer-surf-internet/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2013/08/30/why-we-need-visual-task-board/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+>>>>>>> 9669491508f4084d561576a5cad5cd0dfcb513f0
     </url>
     <url>
         <loc>
             http://erizhang.github.io/blog/2013/10/10/gerrit-jenkins-subversion-integration/
         </loc>
+<<<<<<< HEAD
         <lastmod>2013-10-10T17:42:57+08:00</lastmod>
     </url>
     <url>
@@ -77,5 +134,30 @@
     <url>
         <loc>http://erizhang.github.io/robots.txt</loc>
         <lastmod>2013-05-31T13:29:00+08:00</lastmod>
+=======
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/2014/02/17/Hatching-twitter-reading-notes/</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://erizhang.github.io/blog/2014/02/24/translating-preface-of-software-exorcism/
+        </loc>
+        <lastmod>2014-02-24T17:33:31+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/blog/archives/</loc>
+        <lastmod>2014-02-24T17:33:31+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/</loc>
+        <lastmod>2014-02-24T17:33:31+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://erizhang.github.io/robots.txt</loc>
+        <lastmod>2014-02-21T13:11:50+08:00</lastmod>
+>>>>>>> 9669491508f4084d561576a5cad5cd0dfcb513f0
     </url>
 </urlset>
