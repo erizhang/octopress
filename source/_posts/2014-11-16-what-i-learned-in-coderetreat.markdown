@@ -15,9 +15,9 @@ Even coderetreat's organizing is lightweight compares what's conference. But pre
 
 - Keep the connection with coderetreat.org, and keep you can touch the global organizer via email, if you hosted the GDCR in last year, you mail will be record in historial host naming lsit. So that, you can received first hand news from coderetreat community, about the schedule, host and faclitate guideline, experience sharing, some issues discussion. This is great opportunity to learn from expereienced person, also it's great time to build your reputation.
 
-- Join regional GDCR community.
+- Join regional GDCR community. Regional community can help you prepare your event better, most of members in regional community are expert or activator in they lived city, they are more experienced in community hosting and facilitating, they can give you suggestions, their lesson and learn is indirect knowladge to you. You can copy their way of working, even share the local sponsors.
 
-- look for the sponsors
+- look for the sponsors. GDCR is day-long event, and programmer deserved free lunch and snack, so we need sponsor supply the money and place.
 - 
 
 
