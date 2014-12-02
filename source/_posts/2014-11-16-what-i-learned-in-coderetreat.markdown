@@ -9,7 +9,7 @@ author: Eric Zhang
 
 We're now the 3rd times hosting and facilitating the Global Day of Coderetreat in Hangzhou, China. Compared with Jim Hurne coordinating the globally events, be frankly, our work is easier. Yes, it's easier, but I do not think it's not important. It always request the host and facilitator spends much more effort to prepare and continuiously improve. Personally, beside those Global Day of Coderetreat (GDCR in short), we still spended much time hosting and facilitating such like coding dojo, coding rally etc. which help programmer to practice their software design, coding skill and agile engineering practices. Here I'd like to share what I learned from coderetreat.
 
-![Alt text](/images/2014-11-16-what-i-learned-in-coderetreat/coding.jpg "In Coding")
+![Alt text](/images/2014-11-16-what-i-learned-in-coderetreat/coding.png "In Coding")
 
 
 ## Prepare as earlier as possible
@@ -38,7 +38,7 @@ After each session, we facilitator will give brief introduction about why we add
 
 After finish the sessions, we will gather all programmers, and do a quick retrospective of this event, 10 persons in a group, and select an A0 size paper, to draw 3 circle in the same center. give them each person 3 green color post-it, and answer this question: What's your feeling about this event, write 3? And let them write down and paste on the outside circle, and share the feeling each other in they belonged group. and then, every one has 2 yellow color post-it, and write down the answer for this question: What's you learned from event, write 2? and paste the answer around the middle circle, and then share each other. At last, every one has 1 red color post-it, and write down the answer for this question: What's you next action which is related this topic, write 1? And paste the answer around the inner side circle.
 
-![Alt text](/images/2014-11-16-what-i-learned-in-coderetreat/group-picture.jpg "Retrospective result")
+![Alt text](/images/2014-11-16-what-i-learned-in-coderetreat/group-picture.png "Retrospective result")
 
 
 As a host and facilitator, we can clearly get the feedback from their sharing, for example, if the feeling is boring, there might be some facilitating problem, LOL.
