@@ -13,6 +13,8 @@ d3js很好地对svg元素与数据之间作绑定，在编写好javascript代码
 ### 数据(data)与DOM元素(element)的pair
 我们知道，在使用d3js时，常常用到`d3.selectAll()`，这是什么意思呢？它的意思是会选择相应的data与element(s)的pari(s)，我们可以这样想像一下，在d3js的概念中，每个DOM元素都会有与之对应的data，这样就组成了data/selement这样的pair，如图所示：
 
+![Alt text](/images/2015-01-20-understand-d3js-data-binding/pairs.png =300x "data/element pairs")
+
 那么，每一行的d3js的代码调用结果会是怎样的呢？
 
 ```html
@@ -30,8 +32,13 @@ d3js很好地对svg元素与数据之间作绑定，在编写好javascript代码
 </body>
 </html>
 ```
-当执行代码`d3.selectAll("rect")`时，返回值会是一系列的data/element的pairs，只是这个时候data区域是空的，如图，
+当执行代码`d3.selectAll("rect")`时，返回值会是一系列的data/element的pairs，只是这个时候data区域是空的，如图:
+
+![Alt text](/images/2015-01-20-understand-d3js-data-binding/element_with_empty_data.png =600x "data/element pairs without data")
+
 只有在调用`data()`函数后，元素与数据进行了绑定，这样，原来的pairs中的data区域就填上了数值，pairs有多少对，取决于`data`变量的长度。
+
+![Alt text](/images/2015-01-20-understand-d3js-data-binding/element_with_data.png =600x  "data/element pairs with data")
 
 ### `enter().append(element)`
 
