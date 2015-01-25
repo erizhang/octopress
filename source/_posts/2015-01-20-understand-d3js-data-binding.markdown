@@ -188,7 +188,7 @@ If there are elements existed, and we would like to remove some ones according t
 </body>
 </html>
 ```
-![Alt text](/images/2015-01-20-understand-d3js-data-binding/remove_three_objects.png =500px  "Remove three objects")
+![Alt text](/images/2015-01-20-understand-d3js-data-binding/remove_three_objects.png =500x  "Remove three objects")
 
 `svg.selectAll('rect')` will return the existed DOM elements, in this case, the previous existed `<rect>` is 5, and the `data(data)` methed will combine the data, the data only two data values, after binding, return the objects which mapping previous exist data, here mapping key is the data index. We can make an easy calculation, `s1` has 5 objects, and `s2` has 2 objects, so the `s3` will store 3 objects which is waiting to remove. So later invoke `exit().remove()` methods will remove the DOM element from html.
 
