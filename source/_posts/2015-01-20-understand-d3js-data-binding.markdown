@@ -188,7 +188,7 @@ If there are elements existed, and we would like to remove some ones according t
 </body>
 </html>
 ```
-![Alt text](/images/2015-01-20-understand-d3js-data-binding/remove_three_objects.png =500x  "Remove three objects")
+![Alt text](/images/2015-01-20-understand-d3js-data-binding/remove_three_objects.png =350x  "Remove three objects")
 
 `svg.selectAll('rect')` will return the existed DOM elements, in this case, the previous existed `<rect>` is 5, and the `data(data)` methed will combine the data, the data only two data values, after binding, return the objects which mapping previous exist data, here mapping key is the data index. We can make an easy calculation, `s1` has 5 objects, and `s2` has 2 objects, so the `s3` will store 3 objects which is waiting to remove. So later invoke `exit().remove()` methods will remove the DOM element from html.
 
@@ -201,36 +201,37 @@ According above section experiment, now let's implement an update implementation
         <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
 <body>
-        <h1>Demo</h1>
-        Data: <input id="data" type="text" name="data"><br>
-        <input type="button" value="Submit" onclick="upate()">
-        <div id="chart"></div>
-        <script type="text/javascript">
-                var svg = d3.select("#chart")
-                        .append("svg")
-                        .attr("width", 900)
-                        .attr("height", 400)
-                        .append("g")
-                        .attr("transform", "translate(20, 20)");
-                function upate() {
-                        var inputValue = document.getElementById("data").value;
-                        data = inputValue.split(",");
-                        var s = svg.selectAll("rect")
-                                .data(data).style("fill", "red");
-                        s.enter()
-                                .append("rect").style("fill", "green");
-                        s.exit()
-                                .remove();
-                        s.attr("width", function(d){return d * 10;})
-                                .attr("height", function(d){return d * 10})                            
-                                .attr("x", function(d){return d * 100});
-                }
-        </script>
+    <h1>Demo</h1>
+    Data: <input id="data" type="text" name="data"><br>
+    <input type="button" value="Submit" onclick="upate()">
+    <div id="chart"></div>
+    <script type="text/javascript">
+        var svg = d3.select("#chart")
+            .append("svg")
+            .attr("width", 900)
+            .attr("height", 400)
+            .append("g")
+            .attr("transform", "translate(20, 20)");
+        function upate() {
+            var inputValue = document.getElementById("data").value;
+            data = inputValue.split(",");
+            var s = svg.selectAll("rect")
+                .data(data).style("fill", "red");
+            s.enter()
+                .append("rect").style("fill", "green");
+            s.exit()
+                .remove();
+            s.attr("width", function(d){return d * 10;})
+                .attr("height", function(d){return d * 10})                            
+                .attr("x", function(d){return d * 100});
+        }
+    </script>
 </body>
 </html>
 ```
 We enther the data via input box, and generate the svg according the data, we can set different color to the existed and new added data, that can clear to know the attributes setting for which objects.
 The pattern shall be like this:
+
 - data bind
 - update the existed objects attributes and style
 - enter().append()
