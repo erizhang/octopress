@@ -233,10 +233,11 @@ We enther the data via input box, and generate the svg according the data, we ca
 The pattern shall be like this:
 
 - data bind
-- update the existed objects attributes and style
+- update the existed objects attributes and style etc.
 - enter().append()
+- setting new added objects attributes and style etc.
 - exit().remove()
-- setting new added objects attributes and style
+- setting all objects attributes and style
 
 Another example, please check the source code which is implemented by my colleague Simon: http://jsfiddle.net/simshi/jmvbcwru/2/
 
