@@ -28,7 +28,24 @@ If you would like to find more bug, please make exploratory testing manually, it
 
 ### Pursue high coverage
 
+I know, there might be a KPI for your team, the unit testing line coverage shall be 80+%, function coverage shall be 100%, and branch coverage, conditional coverage. If you can reach 100% coverage for all of above four kinds of coverage, your manager will thumb up and say "well done". We spend a lot of time to pursue high coverage, did you think that is it worth? 
 
+Let's check below source code
+```
+int foo(int x, int y)
+{
+    int z = 0;
+    if ((x > 0) && (y > 0)) {
+        z = x;
+    }
+    return z;
+}
+```
+We use `assertEquals(2, foo(2, 2))` can tough all line of the code, it means the line coverage is 100%, but does it mean the source code has been approven okay, I don't think so.
+
+Source code metrics somehow likes the weather report indicates, single metric does not make sense, you have to combine all of the metrics, and give you insight. Metrics just tell you there may be something wrong, you need to spend time deep dive in the source code.
+
+Manager likes to use metrics to challenge 
 
 ### Write unit testing for legacy code
 
