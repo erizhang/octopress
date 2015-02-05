@@ -34,7 +34,7 @@ If you would like to find more bug, please make exploratory testing manually, it
 I know, there might be a KPI for your team, the unit testing line coverage shall be 80+%, function coverage shall be 100%, and branch coverage, conditional coverage. If you can reach 100% coverage for all of above four kinds of coverage, your manager will thumb up and say "well done". We spend a lot of time to pursue high coverage, did you think that is it worth? 
 
 Let's check below source code
-```
+```c
 int foo(int x, int y)
 {
     int z = 0;
