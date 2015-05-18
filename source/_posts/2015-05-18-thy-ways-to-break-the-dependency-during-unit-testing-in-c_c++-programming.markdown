@@ -284,7 +284,7 @@ TEST(VerifyGame, test_the_dice_points_less_3_points_shall_be_lose) {
 ```
 
 ## Summary
-We list the 5 ways of dependency breaking, it doesn't mean that we suggest you use the ways in unit testing. During unit testing, if we find that it's hard to make unit testing, we have to look back, check why it's too hard to implement unit testing. Is it the design problem? Is it too many dependency, why? Is there any other way to implement same requirements?
+We list the 5 ways of dependency breaking, it doesn't mean that we suggest you use the ways in unit testing. During unit testing, if we find that it's hard to make unit testing, we have to look back, check why it's too hard to implement unit testing. Is it the design problem? Is it too many dependency, why? Is there any other way to implement same requirements? Refactor your source code often, make it better.
 
 Treat the unit testing as design tool, helps you make better design; treat unit testing as safety tools, facilitates you make source code change.
 
