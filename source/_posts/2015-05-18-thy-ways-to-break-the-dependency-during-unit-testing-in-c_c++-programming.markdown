@@ -188,8 +188,9 @@ And then in the unit test file, you can use the assistant function for the depen
 TEST(VerifyGame, test_the_dice_points_is_bigger_than_3_points_shall_be_win) {
     stubInfo si;
     set_stup(dice_points, stub_dice_points, &si);
-    set_stub_dice_points(3 + 2)
+    set_stub_dice_points(3 + 2);
     CHECK(is_win());
+    reset_stub(&si);
 }
 ```
 ## 5. Inherit from abstract class, replaced in dependency injection way
