@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "How to support LaTeX Chinese editing in TeXstudio under Mac"
-date: 2015-08-15 22:01:06 +0800
+title: "How does TeXstudio support Chinese words edit in LaTeX under Mac"
+date: 2015-08-15 22:11:18 +0800
 comments: true
 categories: Programming
 author: Eric Zhang
