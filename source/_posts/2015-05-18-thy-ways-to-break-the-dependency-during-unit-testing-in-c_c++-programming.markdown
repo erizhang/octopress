@@ -3,7 +3,7 @@ layout: post
 title: "The ways to break the dependency during unit testing in C/C++ programming"
 date: 2015-05-15 23:01:06 +0800
 comments: true
-categories: Others
+categories: programming
 author: Eric Zhang
 ---
 

@@ -3,7 +3,8 @@ layout: post
 title: "我为什么翻译《程序员度量》—— 不以团队建设为目的的度量都是耍流氓"
 date: 2013-04-18 10:51
 comments: true
-categories: management
+categories: management reading
+author: 张燎原
 ---
 IT界大多数管理者都是从一线研发走过来的，我也如此，虽然，我现在又在尝试成为一名合格的程序员。
 

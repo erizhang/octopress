@@ -3,7 +3,7 @@ layout: post
 title: 关于结对开发的那些事儿
 date: 2014-11-11 21:12
 comments: true
-categories: agile practice
+categories: agile
 author: Eric Zhang
 ---
 

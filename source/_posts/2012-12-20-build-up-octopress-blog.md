@@ -3,7 +3,7 @@ layout: post
 title: Build up octopress style blog site
 date: 2012-12-20
 comments: true
-categories: pragramming
+categories: technology
 footer: true
 ---
 ## Why I choose octopress?

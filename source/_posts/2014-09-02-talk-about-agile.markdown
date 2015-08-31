@@ -3,7 +3,7 @@ layout: post
 title: 2B青年欢乐多之敏捷扫盲
 date: 2014-09-02 23:12
 comments: true
-categories: thinking
+categories: agile
 author: Eric Zhang
 ---
 

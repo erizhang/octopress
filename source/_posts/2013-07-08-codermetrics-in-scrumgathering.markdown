@@ -3,7 +3,7 @@ layout: post
 title: "Speaking Codermetrics in ScrumGathering Shanghai 2013"
 date: 2013-07-08 11:31
 comments: true
-categories: managment
+categories: management
 author: Eric Zhang
 ---
 

@@ -3,8 +3,8 @@ layout: post
 title: "驱魔人 ——《软件驱魔术》译者序"
 date: 2014-02-24 16:31
 comments: true
-categories: thinking
-author: Eric Zhang
+categories: thinking reading
+author: 张燎原
 ---
 
 从《画皮》里孙俪饰演的降魔人，《倩女悠魂》里古天乐饰演的猎妖师，到《西游》里年轻的驱魔人陈玄奘（文章饰）。不知道为什么，每个故事的驱魔工作者们无一例外，都是蓬头垢面，衣衫褴褛的造型。我一直在想，是什么样的工作性质，让他们如此狼狈不堪：爬高山，钻洞穴，寂寞伴身，学会守候......

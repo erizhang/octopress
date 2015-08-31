@@ -2,8 +2,8 @@
 layout: post
 title: "Domain Name of This Site Will be Changed soon"
 date: 2015-04-02 22:01:06 +0800
-comments: true
-categories: Others
+comments: false
+categories: self-management
 author: Eric Zhang
 ---
 Hi, my dear friends,

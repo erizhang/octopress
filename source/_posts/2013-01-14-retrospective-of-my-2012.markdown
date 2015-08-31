@@ -3,7 +3,7 @@ layout: post
 title: Retrospective of my 2012
 date: 2013-01-14 21:47
 comments: true
-categories: self-managment
+categories: self-management
 footer: true
 ---
 
