@@ -8,7 +8,7 @@ author: Eric Zhang
 ---
 
 
-![Alt text](/images/2015-11-12-how-to-successfully-host-and-facilitate-coderetreat/pair-work.png =400x "coderetreat pair work")
+![Alt text](/images/2015-11-12-how-to-successfully-host-and-facilitate-coderetreat/pair-work.png  "coderetreat pair work")
 
 ## 1. What's coderetreat
 Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design. By providing developers the opportunity to take part in focused practice away from the pressures of 'getting things done', the coderetreat format has proven itself to be a highly effective means of skill improvement. You can visit [coderetreat.org](http://www.coderetreat.org/ "coderetreat") for details.
@@ -86,7 +86,7 @@ Remember that: YOU ARE FACILITATOR. This is important role during the activity, 
 - In the end of the session, you shall use right tools to get enough feedback, and help participants share the idea each other.
 - In the coderetreat ending part (the last activity of whole day), you shall make whole day retrospective.
 
-![Alt text](/images/2015-11-12-how-to-successfully-host-and-facilitate-coderetreat/ending-retrospective "retrospective in ending")
+![Alt text](/images/2015-11-12-how-to-successfully-host-and-facilitate-coderetreat/ending-retrospective.jpg "retrospective in ending")
 
 ### How to make whole day retrospective?
  Actually, there are three questions facilitator shall ask:
