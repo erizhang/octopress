@@ -302,3 +302,9 @@ Can follow section 2.5 to implement it.
 
 If you have already finished above steps, now you can follow the [Gerrit Trigger official guideline](https://wiki.jenkins-ci.org/display/JENKINS/Gerrit+Trigger "Gerrit Trigger") to create the jenkins job. I'm not going to repeat it in this post again.
 
+## Further reading
+
+[Gerrit Code Review - A Quick Introduction](https://review.openstack.org/Documentation/intro-quick.html "gerrit code review")
+
+-- EOF --
+
